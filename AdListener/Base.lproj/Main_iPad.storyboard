@@ -40,10 +40,61 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="Apa-q3-oKl"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="COg-bZ-nbR" kind="push" id="20E-rb-wgF"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-403" y="-568"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4vV-2F-dRn">
+            <objects>
+                <viewController id="COg-bZ-nbR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94V-2N-ESh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Keq-9a-6pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m57-5B-Rzh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-2F-Yna">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="cg2-dy-ddN" kind="embed" id="fmT-r0-nci"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ty-HL-QEF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVm-f3-R5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="-568"/>
+        </scene>
+        <!--Movie Player View Controller-->
+        <scene sceneID="54b-dl-uZf">
+            <objects>
+                <viewController storyboardIdentifier="UXRMoviePlayerViewController" automaticallyAdjustsScrollViewInsets="NO" id="cg2-dy-ddN" customClass="UXRMoviePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jJU-tz-KTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="TI5-rZ-80a"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mqe-yU-424">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGa-MR-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="-568"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -88,6 +88,23 @@
 		513C5E201877892E00AAFB35 /* UXRGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E191877892E00AAFB35 /* UXRGlobals.m */; };
 		513C5E211877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1B1877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.m */; };
 		513C5E221877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */; };
+		513C5E2518778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib */; };
+		513C5E2618778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib */; };
+		513C5E2918778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */; };
+		513C5E2A18778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */; };
+		513C5E2C18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2B18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib */; };
+		513C5E2D18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2B18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib */; };
+		513C5E3018778C9700AAFB35 /* UXRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E2F18778C9700AAFB35 /* UXRImageView.m */; };
+		513C5E3118778C9700AAFB35 /* UXRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E2F18778C9700AAFB35 /* UXRImageView.m */; };
+		513C5E3518778DB800AAFB35 /* UXRNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */; };
+		513C5E3618778DB800AAFB35 /* UXRNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */; };
+		513C5E3A18778F3D00AAFB35 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513C5E3918778F3D00AAFB35 /* MediaPlayer.framework */; };
+		513C5E3D18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */; };
+		513C5E3E18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */; };
+		513C5E3F18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */; };
+		513C5E4018778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */; };
+		513C5E4318778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */; };
+		513C5E4418778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */; };
 		517B429F1873489400A07A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B429E1873489400A07A0A /* Foundation.framework */; };
 		517B42A11873489400A07A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B42A01873489400A07A0A /* CoreGraphics.framework */; };
 		517B42A31873489400A07A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B42A21873489400A07A0A /* UIKit.framework */; };
@@ -208,6 +225,19 @@
 		513C5E1C1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeHorizontalCollectionViewController.h; sourceTree = "<group>"; };
 		513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeHorizontalCollectionViewController.m; sourceTree = "<group>"; };
 		513C5E2318778A7700AAFB35 /* MapKitUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitUtilities.h; sourceTree = "<group>"; };
+		513C5E2418778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		513C5E2718778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRNowPlayingCollectionViewCell.h; sourceTree = "<group>"; };
+		513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRNowPlayingCollectionViewCell.m; sourceTree = "<group>"; };
+		513C5E2B18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRNowPlayingCollectionViewCell.xib; sourceTree = "<group>"; };
+		513C5E2E18778C9700AAFB35 /* UXRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRImageView.h; sourceTree = "<group>"; };
+		513C5E2F18778C9700AAFB35 /* UXRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRImageView.m; sourceTree = "<group>"; };
+		513C5E3318778DB800AAFB35 /* UXRNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRNetworkEngine.h; sourceTree = "<group>"; };
+		513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRNetworkEngine.m; sourceTree = "<group>"; };
+		513C5E3918778F3D00AAFB35 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tide Pods TV Commercial, 'World of Clean'.mp4"; path = "Videos/Tide Pods TV Commercial, 'World of Clean'.mp4"; sourceTree = "<group>"; };
+		513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Twix - _Break Room_ Commercial.mp4"; path = "Videos/Twix - _Break Room_ Commercial.mp4"; sourceTree = "<group>"; };
+		513C5E4118778FEC00AAFB35 /* UXRMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRMoviePlayerViewController.h; sourceTree = "<group>"; };
+		513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRMoviePlayerViewController.m; sourceTree = "<group>"; };
 		517B429B1873489400A07A0A /* AdListener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdListener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517B429E1873489400A07A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		517B42A01873489400A07A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513C5E3A18778F3D00AAFB35 /* MediaPlayer.framework in Frameworks */,
 				517B42A11873489400A07A0A /* CoreGraphics.framework in Frameworks */,
 				517B42A31873489400A07A0A /* UIKit.framework in Frameworks */,
 				517B429F1873489400A07A0A /* Foundation.framework in Frameworks */,
@@ -274,6 +305,7 @@
 		513C5D6B1877859600AAFB35 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				513C5E3218778D1000AAFB35 /* Engines */,
 				513C5D6D187785B500AAFB35 /* Models */,
 			);
 			name = Networking;
@@ -314,6 +346,8 @@
 			children = (
 				517B42B61873489400A07A0A /* UXRViewController.h */,
 				517B42B71873489400A07A0A /* UXRViewController.m */,
+				513C5E4118778FEC00AAFB35 /* UXRMoviePlayerViewController.h */,
+				513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -321,10 +355,16 @@
 		513C5D70187785D100AAFB35 /* Collection View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				513C5E1A1877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.h */,
+				513C5E1B1877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.m */,
 				513C5E03187786D600AAFB35 /* UXRSmartCollectionViewCell.h */,
 				513C5E04187786D600AAFB35 /* UXRSmartCollectionViewCell.m */,
 				513C5E0D187787B900AAFB35 /* UXRHomeCollectionViewCell.h */,
 				513C5E0E187787B900AAFB35 /* UXRHomeCollectionViewCell.m */,
+				513C5E2418778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib */,
+				513C5E2718778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.h */,
+				513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */,
+				513C5E2B18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib */,
 			);
 			name = "Collection View Cells";
 			sourceTree = "<group>";
@@ -343,6 +383,8 @@
 			children = (
 				513C5DF21877869200AAFB35 /* UXRSmartView.h */,
 				513C5DF31877869200AAFB35 /* UXRSmartView.m */,
+				513C5E2E18778C9700AAFB35 /* UXRImageView.h */,
+				513C5E2F18778C9700AAFB35 /* UXRImageView.m */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -431,8 +473,6 @@
 				513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */,
 				513C5D751877861700AAFB35 /* UXRHomeCollectionViewController.h */,
 				513C5D761877861700AAFB35 /* UXRHomeCollectionViewController.m */,
-				513C5E1A1877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.h */,
-				513C5E1B1877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.m */,
 				513C5E1C1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.h */,
 				513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */,
 			);
@@ -466,6 +506,32 @@
 			name = "Navigation Controllers";
 			sourceTree = "<group>";
 		};
+		513C5E3218778D1000AAFB35 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				513C5E3318778DB800AAFB35 /* UXRNetworkEngine.h */,
+				513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */,
+			);
+			name = Engines;
+			sourceTree = "<group>";
+		};
+		513C5E3718778E3E00AAFB35 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				513C5E3818778E4300AAFB35 /* Videos */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		513C5E3818778E4300AAFB35 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */,
+				513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
 		517B42921873489400A07A0A = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +555,7 @@
 		517B429D1873489400A07A0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				513C5E3918778F3D00AAFB35 /* MediaPlayer.framework */,
 				517B429E1873489400A07A0A /* Foundation.framework */,
 				517B42A01873489400A07A0A /* CoreGraphics.framework */,
 				517B42A21873489400A07A0A /* UIKit.framework */,
@@ -501,6 +568,7 @@
 		517B42A41873489400A07A0A /* AdListener */ = {
 			isa = PBXGroup;
 			children = (
+				513C5E3718778E3E00AAFB35 /* Assets */,
 				513C5D74187785F100AAFB35 /* Utilities */,
 				513C5D73187785EB00AAFB35 /* Categories */,
 				513C5D6B1877859600AAFB35 /* Networking */,
@@ -626,9 +694,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513C5E3D18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
 				517B42B51873489400A07A0A /* Main_iPad.storyboard in Resources */,
 				517B42BA1873489400A07A0A /* Images.xcassets in Resources */,
+				513C5E2C18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
+				513C5E2518778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				517B42B21873489400A07A0A /* Main_iPhone.storyboard in Resources */,
+				513C5E3F18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
 				517B42A91873489400A07A0A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,7 +709,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513C5E3E18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
+				513C5E4018778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
 				517B42CB1873489400A07A0A /* InfoPlist.strings in Resources */,
+				513C5E2618778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
+				513C5E2D18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +799,7 @@
 				513C5DD41877866E00AAFB35 /* UIImage+Cropping.m in Sources */,
 				513C5E1F1877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m in Sources */,
 				513C5DFB187786AE00AAFB35 /* UXRLabel.m in Sources */,
+				513C5E3518778DB800AAFB35 /* UXRNetworkEngine.m in Sources */,
 				513C5DBA1877866E00AAFB35 /* CLLocation+isEmpty.m in Sources */,
 				513C5DE21877866E00AAFB35 /* UIView+SimpleSizing.m in Sources */,
 				513C5DE01877866E00AAFB35 /* UIView+ImageCapture.m in Sources */,
@@ -734,6 +811,7 @@
 				513C5E0A187786FC00AAFB35 /* UXRJSONDeserializableObject.m in Sources */,
 				513C5DC21877866E00AAFB35 /* NSDictionary+PList.m in Sources */,
 				513C5D771877861700AAFB35 /* UXRHomeCollectionViewController.m in Sources */,
+				513C5E3018778C9700AAFB35 /* UXRImageView.m in Sources */,
 				513C5DD21877866E00AAFB35 /* UIImage+Color.m in Sources */,
 				513C5DE81877866E00AAFB35 /* UIImage+StackBlur.m in Sources */,
 				513C5DEE1877866E00AAFB35 /* NSString+MetersToMiles.m in Sources */,
@@ -744,6 +822,7 @@
 				513C5DB61877866E00AAFB35 /* UIViewController+SlideTransitions.m in Sources */,
 				513C5DD81877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */,
 				513C5DB81877866E00AAFB35 /* UIStoryboard+storyboardWithUniversalName.m in Sources */,
+				513C5E4318778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */,
 				513C5DD01877866E00AAFB35 /* UIImage+blur.m in Sources */,
 				513C5E211877892E00AAFB35 /* UXRHomeCollectionHeaderReusableView.m in Sources */,
 				513C5DE61877866E00AAFB35 /* UIImageView+AsyncLoading.m in Sources */,
@@ -757,6 +836,7 @@
 				517B42B81873489400A07A0A /* UXRViewController.m in Sources */,
 				513C5DD61877866E00AAFB35 /* UIImage+Resize.m in Sources */,
 				513C5DDA1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m in Sources */,
+				513C5E2918778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */,
 				513C5DDE1877866E00AAFB35 /* UIView+Borders.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,8 +854,10 @@
 				513C5DD11877866E00AAFB35 /* UIImage+blur.m in Sources */,
 				513C5DF11877866E00AAFB35 /* NSNumber+Rounding.m in Sources */,
 				513C5DBB1877866E00AAFB35 /* CLLocation+isEmpty.m in Sources */,
+				513C5E3118778C9700AAFB35 /* UXRImageView.m in Sources */,
 				513C5DED1877866E00AAFB35 /* UIImageView+CrossFade.m in Sources */,
 				513C5DDB1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m in Sources */,
+				513C5E3618778DB800AAFB35 /* UXRNetworkEngine.m in Sources */,
 				513C5DC91877866E00AAFB35 /* UIApplication+Orientation.m in Sources */,
 				513C5DF51877869200AAFB35 /* UXRSmartView.m in Sources */,
 				513C5DE71877866E00AAFB35 /* UIImageView+AsyncLoading.m in Sources */,
@@ -798,7 +880,9 @@
 				513C5DCF1877866E00AAFB35 /* UIFont+EnumerateFonts.m in Sources */,
 				513C5DDF1877866E00AAFB35 /* UIView+Borders.m in Sources */,
 				513C5DEB1877866E00AAFB35 /* UIImage+Colorize.m in Sources */,
+				513C5E4418778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */,
 				513C5DC71877866E00AAFB35 /* NSString+Utils.m in Sources */,
+				513C5E2A18778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */,
 				513C5DBD1877866E00AAFB35 /* CLLocation+Testing.m in Sources */,
 				513C5DC11877866E00AAFB35 /* NSArray+Sorting.m in Sources */,
 				513C5DFC187786AE00AAFB35 /* UXRLabel.m in Sources */,

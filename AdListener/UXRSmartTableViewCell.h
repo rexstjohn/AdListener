@@ -23,7 +23,4 @@
 +(UINib*)nib;
 -(CGRect)tableCellContentRect;
 
-// Dynamic sizing methods.
-+ (float)heightForString:(NSString *)contentString inTableView:(UITableView *)tableView;
-
 @end
