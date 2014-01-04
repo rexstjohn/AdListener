@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6144B5D-2DC0-476B-8B2E-CA8ED48BE7A7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdListener</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5429CA1A-E5FF-4ABF-8BC5-F21C51B24328</key>
+		<string>ssh://github.com/rexstjohn/AdListener.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AdListener.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5429CA1A-E5FF-4ABF-8BC5-F21C51B24328</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rexstjohn/AdListener.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5429CA1A-E5FF-4ABF-8BC5-F21C51B24328</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5429CA1A-E5FF-4ABF-8BC5-F21C51B24328</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AdListener</string>
+		</dict>
+	</array>
+</dict>
+</plist>
