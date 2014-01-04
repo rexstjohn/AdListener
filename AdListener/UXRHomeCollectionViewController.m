@@ -1,38 +1,51 @@
 //
 //  UXRHomeCollectionViewController.m
-//  AdListener
 //
-//  Created by Rex St. John on 1/3/14.
-//  Copyright (c) 2014 UX-RX. All rights reserved.
+//  Created by Rex St. John on 12/16/13.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
-#import "UXRHomeCollectionViewController.h"
+#import "UXRHomeCollectionViewController.h" 
+#import "UXRHomeCollectionViewCell.h"
+#import "UXRHomeCollectionHeaderReusableView.h"
 
 @interface UXRHomeCollectionViewController ()
-
+@property(nonatomic,strong) NSArray *homeScreenItems;
 @end
 
 @implementation UXRHomeCollectionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.homeScreenItems = @[@"Nearby", @"Photos", @"Best Reviewed", @"Reservations"];
 }
 
-- (void)didReceiveMemoryWarning
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UXRHomeCollectionViewCell *cell = [UXRHomeCollectionViewCell cellForCollectionView:self.collectionView forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    //cell.titleLabel.text = self.homeScreenItems[indexPath.row + indexPath.section + 1];
+    
+    return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UICollectionReusableView *reusableview = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        UXRHomeCollectionHeaderReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHomeCollectionHeaderReusableView" forIndexPath:indexPath];
+        reusableview = headerView;
+    }
+    
+    if (kind == UICollectionElementKindSectionFooter) {
+//        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
+//        
+//        reusableview = footerview;
+    }
+    
+    return reusableview;
 }
-
 @end

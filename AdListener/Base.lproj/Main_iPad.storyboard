@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="y61-Zb-HpJ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="552-fg-4iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="nJf-UY-XLx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UXRNavigationViewController" definesPresentationContext="YES" id="nJf-UY-XLx" customClass="UXRNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vMF-co-lYT">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-1288" y="-561"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Home Horizontal Collection View Controller-->
         <scene sceneID="2AX-gf-5rB">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="cRT-8M-KGb" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="UXRHomeHorizontalCollectionViewController" autoresizesArchivedViewToFullSize="NO" id="cRT-8M-KGb" customClass="UXRHomeHorizontalCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="nCF-AV-z1u">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,17 +32,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="F2A-wl-CmH">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="cRT-8M-KGb" id="fPr-8v-BLY"/>
                             <outlet property="delegate" destination="cRT-8M-KGb" id="6gG-bv-a2M"/>
