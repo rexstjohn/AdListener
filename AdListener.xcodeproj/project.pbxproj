@@ -120,6 +120,21 @@
 		517B42C31873489400A07A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B42A21873489400A07A0A /* UIKit.framework */; };
 		517B42CB1873489400A07A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 517B42C91873489400A07A0A /* InfoPlist.strings */; };
 		517B42CD1873489400A07A0A /* AdListenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517B42CC1873489400A07A0A /* AdListenerTests.m */; };
+		51ACA48D1878A941003E41BA /* UXRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA48C1878A941003E41BA /* UXRHomeViewController.m */; };
+		51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
+		51ACA4911878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
+		51ACA4931878ABD1003E41BA /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4921878ABD1003E41BA /* background.jpg */; };
+		51ACA4941878ABD1003E41BA /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4921878ABD1003E41BA /* background.jpg */; };
+		51ACA4961878AD45003E41BA /* listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4951878AD45003E41BA /* listen.png */; };
+		51ACA4971878AD45003E41BA /* listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4951878AD45003E41BA /* listen.png */; };
+		51ACA4991878ADD4003E41BA /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4981878ADD4003E41BA /* speaker.png */; };
+		51ACA49A1878ADD4003E41BA /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4981878ADD4003E41BA /* speaker.png */; };
+		51ACA49C1878AF6D003E41BA /* microphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA49B1878AF6D003E41BA /* microphone.jpg */; };
+		51ACA49D1878AF6D003E41BA /* microphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA49B1878AF6D003E41BA /* microphone.jpg */; };
+		51ACA4A11878B149003E41BA /* UXRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4A01878B149003E41BA /* UXRButton.m */; };
+		51ACA4A21878B149003E41BA /* UXRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4A01878B149003E41BA /* UXRButton.m */; };
+		51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */; };
+		51ACA4A51878B1E4003E41BA /* radial_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */; };
 		D095C99C8EE74516B400C4D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD368F1629B249938F95D427 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -258,6 +273,16 @@
 		517B42C81873489400A07A0A /* AdListenerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdListenerTests-Info.plist"; sourceTree = "<group>"; };
 		517B42CA1873489400A07A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		517B42CC1873489400A07A0A /* AdListenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdListenerTests.m; sourceTree = "<group>"; };
+		51ACA48B1878A941003E41BA /* UXRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeViewController.h; sourceTree = "<group>"; };
+		51ACA48C1878A941003E41BA /* UXRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeViewController.m; sourceTree = "<group>"; };
+		51ACA48F1878A9F3003E41BA /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
+		51ACA4921878ABD1003E41BA /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		51ACA4951878AD45003E41BA /* listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listen.png; sourceTree = "<group>"; };
+		51ACA4981878ADD4003E41BA /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
+		51ACA49B1878AF6D003E41BA /* microphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microphone.jpg; sourceTree = "<group>"; };
+		51ACA49F1878B149003E41BA /* UXRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRButton.h; sourceTree = "<group>"; };
+		51ACA4A01878B149003E41BA /* UXRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRButton.m; sourceTree = "<group>"; };
+		51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radial_gradient.jpg; sourceTree = "<group>"; };
 		8B25CB130BC04F19BF310769 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD368F1629B249938F95D427 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -333,6 +358,7 @@
 		513C5D6E187785BA00AAFB35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				51ACA49E1878B137003E41BA /* Buttons */,
 				513C5DF6187786A300AAFB35 /* Labels */,
 				513C5D72187785DD00AAFB35 /* Custom Views */,
 				513C5D71187785D700AAFB35 /* Table View Cells */,
@@ -348,6 +374,8 @@
 				517B42B71873489400A07A0A /* UXRViewController.m */,
 				513C5E4118778FEC00AAFB35 /* UXRMoviePlayerViewController.h */,
 				513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */,
+				51ACA48B1878A941003E41BA /* UXRHomeViewController.h */,
+				51ACA48C1878A941003E41BA /* UXRHomeViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -518,6 +546,7 @@
 		513C5E3718778E3E00AAFB35 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				51ACA48E1878A9E3003E41BA /* Images */,
 				513C5E3818778E4300AAFB35 /* Videos */,
 			);
 			name = Assets;
@@ -613,6 +642,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		51ACA48E1878A9E3003E41BA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */,
+				51ACA49B1878AF6D003E41BA /* microphone.jpg */,
+				51ACA4981878ADD4003E41BA /* speaker.png */,
+				51ACA4951878AD45003E41BA /* listen.png */,
+				51ACA4921878ABD1003E41BA /* background.jpg */,
+				51ACA48F1878A9F3003E41BA /* no_image.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		51ACA49E1878B137003E41BA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				51ACA49F1878B149003E41BA /* UXRButton.h */,
+				51ACA4A01878B149003E41BA /* UXRButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,12 +745,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ACA49C1878AF6D003E41BA /* microphone.jpg in Resources */,
 				513C5E3D18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
+				51ACA4991878ADD4003E41BA /* speaker.png in Resources */,
+				51ACA4961878AD45003E41BA /* listen.png in Resources */,
+				51ACA4931878ABD1003E41BA /* background.jpg in Resources */,
 				517B42B51873489400A07A0A /* Main_iPad.storyboard in Resources */,
 				517B42BA1873489400A07A0A /* Images.xcassets in Resources */,
 				513C5E2C18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
+				51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */,
 				513C5E2518778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				517B42B21873489400A07A0A /* Main_iPhone.storyboard in Resources */,
+				51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */,
 				513C5E3F18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
 				517B42A91873489400A07A0A /* InfoPlist.strings in Resources */,
 			);
@@ -709,11 +766,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ACA4911878A9F3003E41BA /* no_image.jpg in Resources */,
 				513C5E3E18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
+				51ACA4941878ABD1003E41BA /* background.jpg in Resources */,
 				513C5E4018778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
+				51ACA4971878AD45003E41BA /* listen.png in Resources */,
+				51ACA4A51878B1E4003E41BA /* radial_gradient.jpg in Resources */,
 				517B42CB1873489400A07A0A /* InfoPlist.strings in Resources */,
 				513C5E2618778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
+				51ACA49A1878ADD4003E41BA /* speaker.png in Resources */,
 				513C5E2D18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
+				51ACA49D1878AF6D003E41BA /* microphone.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +851,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				513C5E05187786D600AAFB35 /* UXRSmartCollectionViewCell.m in Sources */,
+				51ACA4A11878B149003E41BA /* UXRButton.m in Sources */,
+				51ACA48D1878A941003E41BA /* UXRHomeViewController.m in Sources */,
 				513C5DBC1877866E00AAFB35 /* CLLocation+Testing.m in Sources */,
 				513C5DC01877866E00AAFB35 /* NSArray+Sorting.m in Sources */,
 				513C5DCC1877866E00AAFB35 /* UIColor+SimpleColoring.m in Sources */,
@@ -852,6 +917,7 @@
 				513C5DE11877866E00AAFB35 /* UIView+ImageCapture.m in Sources */,
 				517B42CD1873489400A07A0A /* AdListenerTests.m in Sources */,
 				513C5DD11877866E00AAFB35 /* UIImage+blur.m in Sources */,
+				51ACA4A21878B149003E41BA /* UXRButton.m in Sources */,
 				513C5DF11877866E00AAFB35 /* NSNumber+Rounding.m in Sources */,
 				513C5DBB1877866E00AAFB35 /* CLLocation+isEmpty.m in Sources */,
 				513C5E3118778C9700AAFB35 /* UXRImageView.m in Sources */,

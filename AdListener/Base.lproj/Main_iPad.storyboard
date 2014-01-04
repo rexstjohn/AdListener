@@ -7,15 +7,16 @@
         <!--Navigation View Controller-->
         <scene sceneID="y61-Zb-HpJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="552-fg-4iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController storyboardIdentifier="UXRNavigationViewController" definesPresentationContext="YES" id="nJf-UY-XLx" customClass="UXRNavigationViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UXRNavigationViewController" definesPresentationContext="YES" navigationBarHidden="YES" id="nJf-UY-XLx" customClass="UXRNavigationViewController" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vMF-co-lYT">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="cRT-8M-KGb" kind="relationship" relationship="rootViewController" id="G6v-3F-qn5"/>
+                        <segue destination="vb8-NH-34e" kind="relationship" relationship="rootViewController" id="B88-bq-CuI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="552-fg-4iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1288" y="-561"/>
         </scene>
@@ -46,7 +47,141 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="-568"/>
+            <point key="canvasLocation" x="757" y="-602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7lI-bo-r1e">
+            <objects>
+                <viewController id="f0U-aU-UB3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QFE-ae-hGf"/>
+                        <viewControllerLayoutGuide type="bottom" id="t4t-8H-nxn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rNd-x0-yo8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pr3-nt-mZA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGl-8R-fk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="570"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="G1m-ce-XmN">
+            <objects>
+                <viewController storyboardIdentifier="UXRHomeViewController" id="vb8-NH-34e" customClass="UXRHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ctH-F3-ff6"/>
+                        <viewControllerLayoutGuide type="bottom" id="16R-TG-XEY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0r3-b6-9QN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radial_gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rht-ly-rO8">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-vj-mLh">
+                                <rect key="frame" x="134" y="34" width="500" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, Kivin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1Q-um-w5G">
+                                        <rect key="frame" x="78" y="6" width="158" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Points: 5,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sab-eD-KKD">
+                                        <rect key="frame" x="78" y="35" width="142" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3e-JK-26X" customClass="UXRButton">
+                                        <rect key="frame" x="343" y="6" width="148" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Redeem Points">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapRedeemPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="DdA-Xf-auC"/>
+                                            <segue destination="f0U-aU-UB3" kind="push" identifier="SpendPointsSegue" id="wUO-3w-7sL"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-gH-6zs">
+                                        <rect key="frame" x="9" y="6" width="51" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="microphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-1N-hWd">
+                                <rect key="frame" x="91" y="212" width="586" height="477"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-F5-Ktd" customClass="UXRButton">
+                                <rect key="frame" x="271" y="784" width="227" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Listen Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapListen:" destination="vb8-NH-34e" eventType="touchUpInside" id="LVC-0z-uPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
+                                <rect key="frame" x="271" y="784" width="227" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancel:" destination="vb8-NH-34e" eventType="touchUpInside" id="tLd-ym-hE9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foE-q7-4hQ" customClass="UXRButton">
+                                <rect key="frame" x="271" y="856" width="227" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSkip:" destination="vb8-NH-34e" eventType="touchUpInside" id="cAk-n3-SgF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cRg-vj-mLh" secondAttribute="centerX" id="CiA-Pq-h3a"/>
+                            <constraint firstItem="cRg-vj-mLh" firstAttribute="top" secondItem="ctH-F3-ff6" secondAttribute="bottom" constant="34" id="Ngd-Pg-rel"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xJp-Sl-HE9"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="eEI-df-pay" id="7Vj-PS-JOd"/>
+                        <outlet property="listenButton" destination="RzN-F5-Ktd" id="jtl-UQ-T0W"/>
+                        <outlet property="listenImageView" destination="0RS-1N-hWd" id="qxe-M6-8hm"/>
+                        <outlet property="profileView" destination="cRg-vj-mLh" id="9qG-S0-7jv"/>
+                        <outlet property="redeemPointsButton" destination="F3e-JK-26X" id="4Qd-Qq-QGh"/>
+                        <outlet property="skipButton" destination="foE-q7-4hQ" id="Cif-mY-y86"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFT-dQ-eun" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="-587"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4vV-2F-dRn">
@@ -75,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVm-f3-R5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="475" y="-568"/>
+            <point key="canvasLocation" x="1435" y="-944"/>
         </scene>
         <!--Movie Player View Controller-->
         <scene sceneID="54b-dl-uZf">
@@ -94,9 +229,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGa-MR-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="-568"/>
+            <point key="canvasLocation" x="2337" y="-944"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="microphone.jpg" width="1280" height="1024"/>
+        <image name="no_image.jpg" width="1290" height="1290"/>
+        <image name="radial_gradient.jpg" width="1280" height="768"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>

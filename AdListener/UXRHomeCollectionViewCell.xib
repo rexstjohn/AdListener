@@ -4,12 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UXRHomeCollectionViewCell">
-            <connections>
-                <outlet property="backgroundImageView" destination="AGF-Pm-Y9j" id="GKg-Fj-2mm"/>
-                <outlet property="titleLabel" destination="41C-l8-4J1" id="Dqo-vj-FRe"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UXRHomeCollectionViewCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UXRHomeCollectionViewCell" id="8kp-Xa-Dzl" customClass="UXRHomeCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="300" height="282"/>
@@ -46,6 +41,10 @@
                 <constraint firstItem="41C-l8-4J1" firstAttribute="leading" secondItem="8kp-Xa-Dzl" secondAttribute="leading" id="xaI-Xp-5nL"/>
             </constraints>
             <size key="customSize" width="300" height="282"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="AGF-Pm-Y9j" id="x2v-RF-hhQ"/>
+                <outlet property="titleLabel" destination="41C-l8-4J1" id="Ow1-bV-Vo4"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
