@@ -47,7 +47,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247" y="-1460"/>
+            <point key="canvasLocation" x="1421" y="-556"/>
         </scene>
         <!--Ad Display View Controller-->
         <scene sceneID="9SR-jB-5NB">
@@ -60,13 +60,88 @@
                     <view key="view" contentMode="scaleToFill" id="b64-d3-bit">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;How many chambers do Tide Pods have?&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UU-qw-oJA">
+                                <rect key="frame" x="47" y="796" width="674" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tidePods.png" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-Wj-5kT">
+                                <rect key="frame" x="137" y="125" width="512" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jG5-fg-wK2">
+                                <rect key="frame" x="106" y="867" width="557" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecq-cb-rxL" customClass="UXRButton">
+                                        <rect key="frame" x="373" y="12" width="161" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Replay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="replayButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="i8C-em-aIv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52b-lb-f8w" customClass="UXRButton">
+                                        <rect key="frame" x="22" y="12" width="161" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Two">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wrongButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="dly-Bv-3w4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVH-mC-lqM" customClass="UXRButton">
+                                        <rect key="frame" x="198" y="12" width="161" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Three">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="gfm-HU-aNY"/>
+                                            <segue destination="cRT-8M-KGb" kind="push" id="OzR-HH-WjN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award: 500 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-ss-U1Q">
+                                        <rect key="frame" x="210" y="82" width="136" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq3-uf-zjm">
+                                <rect key="frame" x="323" y="791" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bfR-vI-6lb"/>
+                    <connections>
+                        <outlet property="questionView" destination="jG5-fg-wK2" id="zya-X1-8mP"/>
+                        <outlet property="tidePodsImageView" destination="y9L-Wj-5kT" id="0NA-4E-M3r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVw-fX-xXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625" y="-561"/>
+            <point key="canvasLocation" x="517" y="-561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7lI-bo-r1e">
@@ -99,11 +174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radial_gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rht-ly-rO8">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-vj-mLh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-vj-mLh">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -138,6 +209,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="4bl-Ae-lIx"/>
+                                    <constraint firstAttribute="height" constant="64" id="DH8-uB-dL2"/>
+                                </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="microphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-1N-hWd">
                                 <rect key="frame" x="91" y="212" width="586" height="477"/>
@@ -190,7 +265,7 @@
                                 <rect key="frame" x="338" y="667" width="93" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-ra-gV6">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-ra-gV6">
                                 <rect key="frame" x="214" y="324" width="338" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -250,6 +325,8 @@
                             <constraint firstAttribute="trailing" secondItem="uG5-ra-gV6" secondAttribute="trailing" constant="216" id="TxT-iS-BQO"/>
                             <constraint firstItem="uG5-ra-gV6" firstAttribute="top" secondItem="cRg-vj-mLh" secondAttribute="bottom" constant="226" id="Vwq-L3-5CX"/>
                             <constraint firstItem="uG5-ra-gV6" firstAttribute="leading" secondItem="0r3-b6-9QN" secondAttribute="leading" constant="214" id="ct4-73-dme"/>
+                            <constraint firstAttribute="trailing" secondItem="cRg-vj-mLh" secondAttribute="trailing" constant="134" id="fMt-is-PBp"/>
+                            <constraint firstItem="cRg-vj-mLh" firstAttribute="leading" secondItem="0r3-b6-9QN" secondAttribute="leading" constant="134" id="xQc-wY-74a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xJp-Sl-HE9"/>
@@ -299,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVm-f3-R5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1435" y="-944"/>
+            <point key="canvasLocation" x="2695" y="-396"/>
         </scene>
         <!--Movie Player View Controller-->
         <scene sceneID="54b-dl-uZf">
@@ -318,14 +395,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGa-MR-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="-944"/>
+            <point key="canvasLocation" x="3113" y="-584"/>
         </scene>
     </scenes>
     <resources>
         <image name="microphone.jpg" width="1280" height="1024"/>
         <image name="no_image.jpg" width="1290" height="1290"/>
-        <image name="radial_gradient.jpg" width="1280" height="768"/>
         <image name="tide-pods.jpg" width="292" height="277"/>
+        <image name="tidePods.png" width="328" height="396"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

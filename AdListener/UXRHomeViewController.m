@@ -87,12 +87,14 @@
 
 -(void)didDetectAdvertisement{
     
+    self.detectedView.alpha = 0;
+    self.detectedView.hidden = NO;
     [UIView animateWithDuration:1.0f animations:^{
         [self.listeningLabel setFrameX:1000];
         self.listenImageView.alpha = .5;
         self.cancelButton.alpha = 0;
         self.equalizerImageView.alpha = 0;
-        self.detectedView.hidden = NO;
+        self.detectedView.alpha = 1;
     }];
 }
 

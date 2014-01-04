@@ -147,6 +147,8 @@
 		51ACA4BA1878BEE2003E41BA /* equalizer_white_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */; };
 		51ACA4BC1878C0A8003E41BA /* tide-pods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */; };
 		51ACA4BD1878C0A8003E41BA /* tide-pods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */; };
+		51ACA4BF1878C502003E41BA /* tidePods.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BE1878C502003E41BA /* tidePods.png */; };
+		51ACA4C01878C502003E41BA /* tidePods.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BE1878C502003E41BA /* tidePods.png */; };
 		D095C99C8EE74516B400C4D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD368F1629B249938F95D427 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -303,6 +305,7 @@
 		51ACA4B51878BE9D003E41BA /* equalizer_white.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer_white.gif; sourceTree = "<group>"; };
 		51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer_white_2.gif; sourceTree = "<group>"; };
 		51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tide-pods.jpg"; sourceTree = "<group>"; };
+		51ACA4BE1878C502003E41BA /* tidePods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tidePods.png; sourceTree = "<group>"; };
 		8B25CB130BC04F19BF310769 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD368F1629B249938F95D427 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -669,6 +672,7 @@
 		51ACA48E1878A9E3003E41BA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				51ACA4BE1878C502003E41BA /* tidePods.png */,
 				51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */,
 				51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */,
 				51ACA4B51878BE9D003E41BA /* equalizer_white.gif */,
@@ -785,6 +789,7 @@
 				51ACA4B31878BE2D003E41BA /* equalizer.gif in Resources */,
 				51ACA4B61878BE9D003E41BA /* equalizer_white.gif in Resources */,
 				51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */,
+				51ACA4BF1878C502003E41BA /* tidePods.png in Resources */,
 				513C5E2518778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				51ACA4BC1878C0A8003E41BA /* tide-pods.jpg in Resources */,
 				517B42B21873489400A07A0A /* Main_iPhone.storyboard in Resources */,
@@ -809,6 +814,7 @@
 				513C5E2618778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				51ACA49A1878ADD4003E41BA /* speaker.png in Resources */,
 				51ACA4B71878BE9D003E41BA /* equalizer_white.gif in Resources */,
+				51ACA4C01878C502003E41BA /* tidePods.png in Resources */,
 				513C5E2D18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
 				51ACA49D1878AF6D003E41BA /* microphone.jpg in Resources */,
 				51ACA4BD1878C0A8003E41BA /* tide-pods.jpg in Resources */,

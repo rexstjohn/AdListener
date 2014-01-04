@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UXRAdDisplayViewController : UIViewController
-
+@property(nonatomic,weak) IBOutlet UIImageView* tidePodsImageView;
+@property(nonatomic,weak) IBOutlet UIView* questionView;
+-(IBAction)replayButtonAction:(id)sender;
+-(IBAction)wrongButtonAction:(id)sender;
+-(IBAction)rightButtonAction:(id)sender;
 @end
