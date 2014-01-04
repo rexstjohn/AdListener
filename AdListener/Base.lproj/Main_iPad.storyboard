@@ -41,7 +41,7 @@
                     <navigationItem key="navigationItem" id="Apa-q3-oKl"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="COg-bZ-nbR" kind="push" id="20E-rb-wgF"/>
+                        <segue destination="COg-bZ-nbR" kind="push" identifier="ViewAdSegue" id="20E-rb-wgF"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="cg2-dy-ddN" kind="embed" id="fmT-r0-nci"/>
+                                    <segue destination="cg2-dy-ddN" kind="embed" identifier="EmbedSegue" id="fmT-r0-nci"/>
                                 </connections>
                             </containerView>
                         </subviews>
