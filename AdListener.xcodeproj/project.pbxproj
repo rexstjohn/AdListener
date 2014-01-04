@@ -99,10 +99,10 @@
 		513C5E3518778DB800AAFB35 /* UXRNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */; };
 		513C5E3618778DB800AAFB35 /* UXRNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */; };
 		513C5E3A18778F3D00AAFB35 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513C5E3918778F3D00AAFB35 /* MediaPlayer.framework */; };
-		513C5E3D18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */; };
-		513C5E3E18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */; };
-		513C5E3F18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */; };
-		513C5E4018778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */; };
+		513C5E3D18778F5B00AAFB35 /* tide_commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* tide_commercial.mp4 */; };
+		513C5E3E18778F5B00AAFB35 /* tide_commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3B18778F5B00AAFB35 /* tide_commercial.mp4 */; };
+		513C5E3F18778F5B00AAFB35 /* twix_commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* twix_commercial.mp4 */; };
+		513C5E4018778F5B00AAFB35 /* twix_commercial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E3C18778F5B00AAFB35 /* twix_commercial.mp4 */; };
 		513C5E4318778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */; };
 		513C5E4418778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */; };
 		517B429F1873489400A07A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B429E1873489400A07A0A /* Foundation.framework */; };
@@ -135,6 +135,16 @@
 		51ACA4A21878B149003E41BA /* UXRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4A01878B149003E41BA /* UXRButton.m */; };
 		51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */; };
 		51ACA4A51878B1E4003E41BA /* radial_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */; };
+		51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */; };
+		51ACA4A91878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */; };
+		51ACA4B01878BDA0003E41BA /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4AF1878BDA0003E41BA /* UIImage+animatedGIF.m */; };
+		51ACA4B11878BDA0003E41BA /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA4AF1878BDA0003E41BA /* UIImage+animatedGIF.m */; };
+		51ACA4B31878BE2D003E41BA /* equalizer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B21878BE2D003E41BA /* equalizer.gif */; };
+		51ACA4B41878BE2D003E41BA /* equalizer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B21878BE2D003E41BA /* equalizer.gif */; };
+		51ACA4B61878BE9D003E41BA /* equalizer_white.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B51878BE9D003E41BA /* equalizer_white.gif */; };
+		51ACA4B71878BE9D003E41BA /* equalizer_white.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B51878BE9D003E41BA /* equalizer_white.gif */; };
+		51ACA4B91878BEE2003E41BA /* equalizer_white_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */; };
+		51ACA4BA1878BEE2003E41BA /* equalizer_white_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */; };
 		D095C99C8EE74516B400C4D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD368F1629B249938F95D427 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -249,8 +259,8 @@
 		513C5E3318778DB800AAFB35 /* UXRNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRNetworkEngine.h; sourceTree = "<group>"; };
 		513C5E3418778DB800AAFB35 /* UXRNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRNetworkEngine.m; sourceTree = "<group>"; };
 		513C5E3918778F3D00AAFB35 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tide Pods TV Commercial, 'World of Clean'.mp4"; path = "Videos/Tide Pods TV Commercial, 'World of Clean'.mp4"; sourceTree = "<group>"; };
-		513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Twix - _Break Room_ Commercial.mp4"; path = "Videos/Twix - _Break Room_ Commercial.mp4"; sourceTree = "<group>"; };
+		513C5E3B18778F5B00AAFB35 /* tide_commercial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = tide_commercial.mp4; path = Videos/tide_commercial.mp4; sourceTree = "<group>"; };
+		513C5E3C18778F5B00AAFB35 /* twix_commercial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = twix_commercial.mp4; path = Videos/twix_commercial.mp4; sourceTree = "<group>"; };
 		513C5E4118778FEC00AAFB35 /* UXRMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRMoviePlayerViewController.h; sourceTree = "<group>"; };
 		513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRMoviePlayerViewController.m; sourceTree = "<group>"; };
 		517B429B1873489400A07A0A /* AdListener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdListener.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -283,6 +293,13 @@
 		51ACA49F1878B149003E41BA /* UXRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRButton.h; sourceTree = "<group>"; };
 		51ACA4A01878B149003E41BA /* UXRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRButton.m; sourceTree = "<group>"; };
 		51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radial_gradient.jpg; sourceTree = "<group>"; };
+		51ACA4A61878BA20003E41BA /* UXRAdDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRAdDisplayViewController.h; sourceTree = "<group>"; };
+		51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRAdDisplayViewController.m; sourceTree = "<group>"; };
+		51ACA4AE1878BDA0003E41BA /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		51ACA4AF1878BDA0003E41BA /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		51ACA4B21878BE2D003E41BA /* equalizer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer.gif; sourceTree = "<group>"; };
+		51ACA4B51878BE9D003E41BA /* equalizer_white.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer_white.gif; sourceTree = "<group>"; };
+		51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer_white_2.gif; sourceTree = "<group>"; };
 		8B25CB130BC04F19BF310769 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD368F1629B249938F95D427 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -376,6 +393,8 @@
 				513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */,
 				51ACA48B1878A941003E41BA /* UXRHomeViewController.h */,
 				51ACA48C1878A941003E41BA /* UXRHomeViewController.m */,
+				51ACA4A61878BA20003E41BA /* UXRAdDisplayViewController.h */,
+				51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -420,6 +439,8 @@
 		513C5D73187785EB00AAFB35 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				51ACA4AE1878BDA0003E41BA /* UIImage+animatedGIF.h */,
+				51ACA4AF1878BDA0003E41BA /* UIImage+animatedGIF.m */,
 				513C5D7A1877866E00AAFB35 /* UIViewController+SlideTransitions.h */,
 				513C5D7B1877866E00AAFB35 /* UIViewController+SlideTransitions.m */,
 				513C5D7C1877866E00AAFB35 /* UIStoryboard+storyboardWithUniversalName.h */,
@@ -555,8 +576,8 @@
 		513C5E3818778E4300AAFB35 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				513C5E3B18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 */,
-				513C5E3C18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 */,
+				513C5E3B18778F5B00AAFB35 /* tide_commercial.mp4 */,
+				513C5E3C18778F5B00AAFB35 /* twix_commercial.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -645,6 +666,9 @@
 		51ACA48E1878A9E3003E41BA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */,
+				51ACA4B51878BE9D003E41BA /* equalizer_white.gif */,
+				51ACA4B21878BE2D003E41BA /* equalizer.gif */,
 				51ACA4A31878B1E4003E41BA /* radial_gradient.jpg */,
 				51ACA49B1878AF6D003E41BA /* microphone.jpg */,
 				51ACA4981878ADD4003E41BA /* speaker.png */,
@@ -745,19 +769,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ACA4B91878BEE2003E41BA /* equalizer_white_2.gif in Resources */,
 				51ACA49C1878AF6D003E41BA /* microphone.jpg in Resources */,
-				513C5E3D18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
+				513C5E3D18778F5B00AAFB35 /* tide_commercial.mp4 in Resources */,
 				51ACA4991878ADD4003E41BA /* speaker.png in Resources */,
 				51ACA4961878AD45003E41BA /* listen.png in Resources */,
 				51ACA4931878ABD1003E41BA /* background.jpg in Resources */,
 				517B42B51873489400A07A0A /* Main_iPad.storyboard in Resources */,
 				517B42BA1873489400A07A0A /* Images.xcassets in Resources */,
 				513C5E2C18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
+				51ACA4B31878BE2D003E41BA /* equalizer.gif in Resources */,
+				51ACA4B61878BE9D003E41BA /* equalizer_white.gif in Resources */,
 				51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */,
 				513C5E2518778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				517B42B21873489400A07A0A /* Main_iPhone.storyboard in Resources */,
 				51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */,
-				513C5E3F18778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
+				513C5E3F18778F5B00AAFB35 /* twix_commercial.mp4 in Resources */,
 				517B42A91873489400A07A0A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,16 +794,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				51ACA4911878A9F3003E41BA /* no_image.jpg in Resources */,
-				513C5E3E18778F5B00AAFB35 /* Tide Pods TV Commercial, 'World of Clean'.mp4 in Resources */,
+				513C5E3E18778F5B00AAFB35 /* tide_commercial.mp4 in Resources */,
 				51ACA4941878ABD1003E41BA /* background.jpg in Resources */,
-				513C5E4018778F5B00AAFB35 /* Twix - _Break Room_ Commercial.mp4 in Resources */,
+				513C5E4018778F5B00AAFB35 /* twix_commercial.mp4 in Resources */,
 				51ACA4971878AD45003E41BA /* listen.png in Resources */,
 				51ACA4A51878B1E4003E41BA /* radial_gradient.jpg in Resources */,
+				51ACA4BA1878BEE2003E41BA /* equalizer_white_2.gif in Resources */,
 				517B42CB1873489400A07A0A /* InfoPlist.strings in Resources */,
 				513C5E2618778ADF00AAFB35 /* UXRHomeCollectionViewCell.xib in Resources */,
 				51ACA49A1878ADD4003E41BA /* speaker.png in Resources */,
+				51ACA4B71878BE9D003E41BA /* equalizer_white.gif in Resources */,
 				513C5E2D18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib in Resources */,
 				51ACA49D1878AF6D003E41BA /* microphone.jpg in Resources */,
+				51ACA4B41878BE2D003E41BA /* equalizer.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +888,7 @@
 				513C5DCC1877866E00AAFB35 /* UIColor+SimpleColoring.m in Sources */,
 				513C5E0F187787B900AAFB35 /* UXRHomeCollectionViewCell.m in Sources */,
 				513C5DC41877866E00AAFB35 /* NSString+Location.m in Sources */,
+				51ACA4B01878BDA0003E41BA /* UIImage+animatedGIF.m in Sources */,
 				513C5DCA1877866E00AAFB35 /* UIButton+Theming.m in Sources */,
 				513C5DC81877866E00AAFB35 /* UIApplication+Orientation.m in Sources */,
 				517B42AF1873489400A07A0A /* UXRAppDelegate.m in Sources */,
@@ -880,6 +911,7 @@
 				513C5DD21877866E00AAFB35 /* UIImage+Color.m in Sources */,
 				513C5DE81877866E00AAFB35 /* UIImage+StackBlur.m in Sources */,
 				513C5DEE1877866E00AAFB35 /* NSString+MetersToMiles.m in Sources */,
+				51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				517B42AB1873489400A07A0A /* main.m in Sources */,
 				513C5E01187786C300AAFB35 /* UXRSmartTableViewCell.m in Sources */,
 				513C5DE41877866E00AAFB35 /* UIImage+Compositing.m in Sources */,
@@ -913,6 +945,7 @@
 				513C5E06187786D600AAFB35 /* UXRSmartCollectionViewCell.m in Sources */,
 				513C5E02187786C300AAFB35 /* UXRSmartTableViewCell.m in Sources */,
 				513C5DD91877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */,
+				51ACA4A91878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				513C5DCD1877866E00AAFB35 /* UIColor+SimpleColoring.m in Sources */,
 				513C5DE11877866E00AAFB35 /* UIView+ImageCapture.m in Sources */,
 				517B42CD1873489400A07A0A /* AdListenerTests.m in Sources */,
@@ -950,6 +983,7 @@
 				513C5DC71877866E00AAFB35 /* NSString+Utils.m in Sources */,
 				513C5E2A18778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */,
 				513C5DBD1877866E00AAFB35 /* CLLocation+Testing.m in Sources */,
+				51ACA4B11878BDA0003E41BA /* UIImage+animatedGIF.m in Sources */,
 				513C5DC11877866E00AAFB35 /* NSArray+Sorting.m in Sources */,
 				513C5DFC187786AE00AAFB35 /* UXRLabel.m in Sources */,
 			);

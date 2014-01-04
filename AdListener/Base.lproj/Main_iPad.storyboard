@@ -47,7 +47,26 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="-602"/>
+            <point key="canvasLocation" x="1247" y="-1460"/>
+        </scene>
+        <!--Ad Display View Controller-->
+        <scene sceneID="9SR-jB-5NB">
+            <objects>
+                <viewController storyboardIdentifier="UXRAdDisplayViewController" id="Z8Q-Nw-6vU" customClass="UXRAdDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vZA-pM-kYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="XTq-uX-t0c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b64-d3-bit">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bfR-vI-6lb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVw-fX-xXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="-561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7lI-bo-r1e">
@@ -66,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGl-8R-fk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563" y="570"/>
+            <point key="canvasLocation" x="607" y="660"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="G1m-ce-XmN">
@@ -124,6 +143,19 @@
                                 <rect key="frame" x="91" y="212" width="586" height="477"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqf-Bf-nXR" customClass="UXRButton">
+                                <rect key="frame" x="271" y="784" width="227" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Earn Points!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapEarnPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="2Zl-wv-eVe"/>
+                                    <segue destination="Z8Q-Nw-6vU" kind="push" identifier="EarnPointsSegue" id="uoZ-gU-4ah"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-F5-Ktd" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,12 +193,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listening...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-gP-NWo" customClass="UXRLabel">
-                                <rect key="frame" x="1000" y="720" width="91" height="21"/>
+                                <rect key="frame" x="1000" y="750" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRG-p2-DUd">
+                                <rect key="frame" x="338" y="667" width="93" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -179,6 +215,8 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="cancelButton" destination="eEI-df-pay" id="7Vj-PS-JOd"/>
+                        <outlet property="detectedButton" destination="Zqf-Bf-nXR" id="byW-2R-wOl"/>
+                        <outlet property="equalizerImageView" destination="mRG-p2-DUd" id="TsT-l6-jrp"/>
                         <outlet property="listenButton" destination="RzN-F5-Ktd" id="jtl-UQ-T0W"/>
                         <outlet property="listenImageView" destination="0RS-1N-hWd" id="qxe-M6-8hm"/>
                         <outlet property="listeningLabel" destination="rpJ-gP-NWo" id="tlg-De-2hx"/>
@@ -189,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFT-dQ-eun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="-587"/>
+            <point key="canvasLocation" x="-413" y="-561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4vV-2F-dRn">
