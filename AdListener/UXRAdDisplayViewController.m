@@ -31,18 +31,12 @@
     
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: [NSURL fileURLWithPath: [[NSBundle mainBundle]pathForResource: [NSString stringWithFormat:@"tide_commercial"] ofType:@"mp4"]]];
     
-    self.moviePlayer.fullscreen = YES;
+    self.moviePlayer.fullscreen = NO;
+    self.moviePlayer.controlStyle = MPMovieControlStyleNone;
     self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
-    self.moviePlayer.view.frame = self.view.bounds;
+    self.moviePlayer.view.frame = CGRectMake(0, 200, self.view.frame.size.width, 450);
     [self.view addSubview:self.moviePlayer.view];
     [self.moviePlayer play];
-    
-    
-//    NSURL *videoURL = [NSURL URLWithString:[[[[self.campArray objectAtIndex:button.tag]valueForKey:@"images"]objectAtIndex:0]valueForKey:@"imageURL"]];
-//    self.moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:videoURL];
-//    self.moviePlayer.moviePlayer.shouldAutoplay=YES;
-//    [self presentModalViewController:self.moviePlayer animated:YES];
-//    [self.moviePlayer.moviePlayer play];
 }
 
 - (void)didReceiveMemoryWarning

@@ -92,7 +92,7 @@
         self.listenImageView.alpha = .5;
         self.cancelButton.alpha = 0;
         self.equalizerImageView.alpha = 0;
-        self.detectedButton.alpha = 1;
+        self.detectedView.hidden = NO;
     }];
 }
 

@@ -143,19 +143,6 @@
                                 <rect key="frame" x="91" y="212" width="586" height="477"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqf-Bf-nXR" customClass="UXRButton">
-                                <rect key="frame" x="271" y="784" width="227" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Earn Points!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapEarnPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="2Zl-wv-eVe"/>
-                                    <segue destination="Z8Q-Nw-6vU" kind="push" identifier="EarnPointsSegue" id="uoZ-gU-4ah"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-F5-Ktd" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,7 +155,7 @@
                                     <action selector="didTapListen:" destination="vb8-NH-34e" eventType="touchUpInside" id="LVC-0z-uPu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -203,11 +190,66 @@
                                 <rect key="frame" x="338" y="667" width="93" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-ra-gV6">
+                                <rect key="frame" x="214" y="324" width="338" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tide-pods.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zST-tP-kTd">
+                                        <rect key="frame" x="8" y="6" width="324" height="237"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="324" id="8Aj-80-yLm"/>
+                                            <constraint firstAttribute="height" constant="237" id="O52-WP-WaR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqf-Bf-nXR" customClass="UXRButton">
+                                        <rect key="frame" x="57" y="294" width="227" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="13r-8q-kIg"/>
+                                            <constraint firstAttribute="width" constant="227" id="OmI-EF-ofz"/>
+                                        </constraints>
+                                        <state key="normal" title="Earn Points!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapEarnPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="2Zl-wv-eVe"/>
+                                            <segue destination="Z8Q-Nw-6vU" kind="push" identifier="EarnPointsSegue" id="uoZ-gU-4ah"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Advertisement Detected!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alg-aN-Dfu">
+                                        <rect key="frame" x="75" y="259" width="190" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="alg-aN-Dfu" firstAttribute="top" secondItem="zST-tP-kTd" secondAttribute="bottom" constant="16" id="5VS-Wz-gVE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zqf-Bf-nXR" secondAttribute="trailing" constant="54" id="ELF-2T-T9B"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zqf-Bf-nXR" secondAttribute="bottom" constant="20" id="G4p-QK-AlC"/>
+                                    <constraint firstItem="Zqf-Bf-nXR" firstAttribute="top" secondItem="alg-aN-Dfu" secondAttribute="bottom" constant="14" id="UcD-OK-2bp"/>
+                                    <constraint firstItem="Zqf-Bf-nXR" firstAttribute="leading" secondItem="uG5-ra-gV6" secondAttribute="leading" constant="57" id="WQi-4j-wVQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="zST-tP-kTd" secondAttribute="trailing" constant="6" id="bMv-Ew-WAu"/>
+                                    <constraint firstAttribute="height" constant="365" id="ga3-cR-geu"/>
+                                    <constraint firstItem="zST-tP-kTd" firstAttribute="leading" secondItem="uG5-ra-gV6" secondAttribute="leading" constant="8" id="rvU-BS-GlF"/>
+                                    <constraint firstItem="zST-tP-kTd" firstAttribute="top" secondItem="uG5-ra-gV6" secondAttribute="top" constant="6" id="yWJ-S7-R0M"/>
+                                    <constraint firstAttribute="width" constant="338" id="zgb-Yq-u6m"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="cRg-vj-mLh" secondAttribute="centerX" id="CiA-Pq-h3a"/>
                             <constraint firstItem="cRg-vj-mLh" firstAttribute="top" secondItem="ctH-F3-ff6" secondAttribute="bottom" constant="34" id="Ngd-Pg-rel"/>
+                            <constraint firstItem="eEI-df-pay" firstAttribute="top" secondItem="uG5-ra-gV6" secondAttribute="bottom" constant="95" id="OFl-DS-jpw"/>
+                            <constraint firstAttribute="trailing" secondItem="uG5-ra-gV6" secondAttribute="trailing" constant="216" id="TxT-iS-BQO"/>
+                            <constraint firstItem="uG5-ra-gV6" firstAttribute="top" secondItem="cRg-vj-mLh" secondAttribute="bottom" constant="226" id="Vwq-L3-5CX"/>
+                            <constraint firstItem="uG5-ra-gV6" firstAttribute="leading" secondItem="0r3-b6-9QN" secondAttribute="leading" constant="214" id="ct4-73-dme"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xJp-Sl-HE9"/>
@@ -216,6 +258,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="eEI-df-pay" id="7Vj-PS-JOd"/>
                         <outlet property="detectedButton" destination="Zqf-Bf-nXR" id="byW-2R-wOl"/>
+                        <outlet property="detectedView" destination="uG5-ra-gV6" id="wjE-gF-Mrq"/>
                         <outlet property="equalizerImageView" destination="mRG-p2-DUd" id="TsT-l6-jrp"/>
                         <outlet property="listenButton" destination="RzN-F5-Ktd" id="jtl-UQ-T0W"/>
                         <outlet property="listenImageView" destination="0RS-1N-hWd" id="qxe-M6-8hm"/>
@@ -282,6 +325,7 @@
         <image name="microphone.jpg" width="1280" height="1024"/>
         <image name="no_image.jpg" width="1290" height="1290"/>
         <image name="radial_gradient.jpg" width="1280" height="768"/>
+        <image name="tide-pods.jpg" width="292" height="277"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
