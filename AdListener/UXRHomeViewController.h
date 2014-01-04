@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UXRButton.h"
+#import "UXRLabel.h"
 
 @interface UXRHomeViewController : UIViewController
 @property(nonatomic,weak) IBOutlet UXRButton *listenButton;
 @property(nonatomic,weak) IBOutlet UXRButton *redeemPointsButton;
 @property(nonatomic,weak) IBOutlet UXRButton *skipButton;
 @property(nonatomic,weak) IBOutlet UXRButton *cancelButton;
+@property(nonatomic,weak) IBOutlet UXRLabel *listeningLabel;
 @property(nonatomic,weak) IBOutlet UIView *profileView;
 @property(nonatomic,weak) IBOutlet UIImageView *listenImageView;
 -(IBAction)didTapListen:(id)sender;

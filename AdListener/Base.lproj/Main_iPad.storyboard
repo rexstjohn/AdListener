@@ -160,6 +160,13 @@
                                     <action selector="didTapSkip:" destination="vb8-NH-34e" eventType="touchUpInside" id="cAk-n3-SgF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listening...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-gP-NWo" customClass="UXRLabel">
+                                <rect key="frame" x="1000" y="720" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -174,6 +181,7 @@
                         <outlet property="cancelButton" destination="eEI-df-pay" id="7Vj-PS-JOd"/>
                         <outlet property="listenButton" destination="RzN-F5-Ktd" id="jtl-UQ-T0W"/>
                         <outlet property="listenImageView" destination="0RS-1N-hWd" id="qxe-M6-8hm"/>
+                        <outlet property="listeningLabel" destination="rpJ-gP-NWo" id="tlg-De-2hx"/>
                         <outlet property="profileView" destination="cRg-vj-mLh" id="9qG-S0-7jv"/>
                         <outlet property="redeemPointsButton" destination="F3e-JK-26X" id="4Qd-Qq-QGh"/>
                         <outlet property="skipButton" destination="foE-q7-4hQ" id="Cif-mY-y86"/>

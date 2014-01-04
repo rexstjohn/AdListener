@@ -7,6 +7,7 @@
 //
 
 #import "UXRHomeViewController.h"
+#import "UIView+SimpleSizing.h"
 
 @interface UXRHomeViewController ()
 
@@ -28,6 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.navigationController.navigationBarHidden = YES;
+    [self.listeningLabel setFrameX:1000];
 }
 
 #pragma mark - Actions.
@@ -35,11 +37,14 @@
 -(IBAction)didTapListen:(id)sender{
     
     [UIView animateWithDuration:1.0f animations:^{
+        CGFloat offscreenX = 1000;
         self.listenImageView.alpha = 1;
         self.skipButton.alpha = 0;
         self.profileView.alpha = 0;
         self.listenButton.alpha = 0;
         self.cancelButton.alpha = 1;
+        
+        [self.listeningLabel setFrameX:self.listenImageView.center.x - self.listeningLabel.frame.size.width / 2];
     }];
 }
 
@@ -59,6 +64,7 @@
         self.profileView.alpha = 1;
         self.listenButton.alpha = 1;
         self.cancelButton.alpha = 0;
+        [self.listeningLabel setFrameX:1000];
     }];
 }
 
