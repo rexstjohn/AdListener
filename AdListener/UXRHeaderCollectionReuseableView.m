@@ -25,13 +25,8 @@
     [self addSubview:self.userInfoView];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
++(CGSize)sizeForHeaderView{
+    return CGSizeMake(529.0f, 600.0f);
 }
-*/
 
 @end

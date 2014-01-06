@@ -11,4 +11,6 @@
 
 @interface UXRHeaderCollectionReuseableView : UXRBaseCollectionReuseableView
 @property(nonatomic,strong) UXRUserInfoHeaderView *userInfoView;
+
++(CGSize)sizeForHeaderView;
 @end

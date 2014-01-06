@@ -47,7 +47,8 @@
                     <navigationItem key="navigationItem" id="Apa-q3-oKl"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="COg-bZ-nbR" kind="push" identifier="ViewAdSegue" id="20E-rb-wgF"/>
+                        <segue destination="Z8Q-Nw-6vU" kind="push" identifier="PushAdViewSegue" id="cWs-AB-tka"/>
+                        <segue destination="f0U-aU-UB3" kind="push" identifier="PushRedeemSegue" id="Ztc-wF-4df"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +141,7 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -415,35 +416,6 @@
             </objects>
             <point key="canvasLocation" x="-413" y="-561"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="4vV-2F-dRn">
-            <objects>
-                <viewController id="COg-bZ-nbR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="94V-2N-ESh"/>
-                        <viewControllerLayoutGuide type="bottom" id="Keq-9a-6pg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m57-5B-Rzh">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-2F-Yna">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="cg2-dy-ddN" kind="embed" identifier="EmbedSegue" id="fmT-r0-nci"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0Ty-HL-QEF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yVm-f3-R5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2695" y="-396"/>
-        </scene>
         <!--Movie Player View Controller-->
         <scene sceneID="54b-dl-uZf">
             <objects>
@@ -477,5 +449,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="KtJ-WM-rPm"/>
+        <segue reference="cWs-AB-tka"/>
+        <segue reference="Ztc-wF-4df"/>
     </inferredMetricsTieBreakers>
 </document>

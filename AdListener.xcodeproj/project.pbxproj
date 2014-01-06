@@ -1199,6 +1199,7 @@
 				GCC_PREFIX_HEADER = "AdListener/AdListener-Prefix.pch";
 				INFOPLIST_FILE = "AdListener/AdListener-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1213,6 +1214,7 @@
 				GCC_PREFIX_HEADER = "AdListener/AdListener-Prefix.pch";
 				INFOPLIST_FILE = "AdListener/AdListener-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -24,8 +24,8 @@
                                               [UICollectionViewFlowLayout alloc] init
                                               ];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    flowLayout.minimumLineSpacing = 5.0f;
-    flowLayout.minimumInteritemSpacing = 5.0f;
+    flowLayout.minimumLineSpacing = 10.0f;
+    flowLayout.minimumInteritemSpacing = 10.0f;
     self.collectionView.collectionViewLayout = flowLayout;
 }
 

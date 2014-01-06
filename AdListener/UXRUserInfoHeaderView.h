@@ -7,7 +7,8 @@
 //
 
 #import "UXRSmartView.h"
-
+#import "UXRButton.h"
 @interface UXRUserInfoHeaderView : UXRSmartView
-
+@property(nonatomic,weak) IBOutlet UXRButton *redeemButton;
+@property(nonatomic,weak) IBOutlet UXRButton *rewatchButton;
 @end
