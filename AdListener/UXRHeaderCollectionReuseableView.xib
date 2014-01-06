@@ -71,7 +71,7 @@
                                 <action selector="didTapRewatch:" destination="ivo-WX-5fC" eventType="touchUpInside" id="ed5-zO-kRz"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-Ed-qQ1" customClass="UXRButton">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-Ed-qQ1" customClass="UXRButton">
                             <rect key="frame" x="350" y="85" width="130" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +88,7 @@
                                 <action selector="didTapListen:" destination="ivo-WX-5fC" eventType="touchUpInside" id="oug-AQ-vDx"/>
                             </connections>
                         </button>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-86-dDr">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-86-dDr">
                             <rect key="frame" x="20" y="29" width="252" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
@@ -114,7 +114,13 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="140" id="BXO-6B-pK0"/>
+                        <constraint firstItem="jIN-kX-3ym" firstAttribute="top" secondItem="Bmd-86-dDr" secondAttribute="bottom" constant="44" id="Ojw-km-V4V"/>
+                        <constraint firstAttribute="bottom" secondItem="Ian-Ed-qQ1" secondAttribute="bottom" constant="15" id="VFm-lD-pSA"/>
+                        <constraint firstItem="Ian-Ed-qQ1" firstAttribute="top" secondItem="WZe-4N-hkW" secondAttribute="bottom" constant="25" id="hjK-H4-UjE"/>
+                        <constraint firstItem="Bmd-86-dDr" firstAttribute="leading" secondItem="oNK-N1-BM7" secondAttribute="leading" constant="20" id="iix-TS-lkC"/>
+                        <constraint firstAttribute="trailing" secondItem="Ian-Ed-qQ1" secondAttribute="trailing" constant="20" id="ipF-IN-G5y"/>
                         <constraint firstAttribute="width" constant="500" id="kcH-5R-yHt"/>
+                        <constraint firstItem="Bmd-86-dDr" firstAttribute="top" secondItem="oNK-N1-BM7" secondAttribute="top" constant="29" id="zna-Sy-yKx"/>
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dancingwiththestars.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5bj-WV-d8W">
@@ -141,6 +147,7 @@
                 <constraint firstItem="oFi-s6-Nk7" firstAttribute="top" secondItem="wbs-P7-SAd" secondAttribute="bottom" constant="41" id="5p3-vt-VEZ"/>
                 <constraint firstItem="oNK-N1-BM7" firstAttribute="leading" secondItem="ivo-WX-5fC" secondAttribute="leading" constant="14" id="SgW-VU-6sE"/>
                 <constraint firstAttribute="trailing" secondItem="5bj-WV-d8W" secondAttribute="trailing" constant="15" id="Xzf-dW-e9s"/>
+                <constraint firstItem="oFi-s6-Nk7" firstAttribute="leading" secondItem="ivo-WX-5fC" secondAttribute="leading" constant="14" id="bKt-EO-tr3"/>
                 <constraint firstItem="5bj-WV-d8W" firstAttribute="top" secondItem="oFi-s6-Nk7" secondAttribute="bottom" constant="3" id="udK-zG-Eym"/>
                 <constraint firstItem="5bj-WV-d8W" firstAttribute="leading" secondItem="ivo-WX-5fC" secondAttribute="leading" constant="14" id="xyi-Ln-wcB"/>
             </constraints>

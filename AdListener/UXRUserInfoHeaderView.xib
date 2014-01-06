@@ -54,7 +54,7 @@
                     <rect key="frame" x="14" y="702" width="500" height="140"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-43-x6C" customClass="UXRButton">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-43-x6C" customClass="UXRButton">
                             <rect key="frame" x="350" y="20" width="130" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,11 +70,13 @@
                                 <action selector="didTapRewatch:" destination="2Uj-ry-f7X" eventType="touchUpInside" id="334-XQ-iS0"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-nA-yLP" customClass="UXRButton">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-nA-yLP" customClass="UXRButton">
                             <rect key="frame" x="350" y="85" width="130" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="BfK-4W-k7B"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Teh-II-Dha"/>
                                 <constraint firstAttribute="height" constant="40" id="jjf-Xd-V1U"/>
                                 <constraint firstAttribute="width" constant="130" id="qAC-Hr-QCI"/>
                             </constraints>
@@ -86,7 +88,7 @@
                                 <action selector="didTapListen:" destination="2Uj-ry-f7X" eventType="touchUpInside" id="Yja-5P-EBQ"/>
                             </connections>
                         </button>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcO-bC-NFG">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcO-bC-NFG">
                             <rect key="frame" x="20" y="29" width="252" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
@@ -97,12 +99,11 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Listen for another ad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-W3-E4f">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen for another ad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-W3-E4f">
                             <rect key="frame" x="20" y="94" width="164" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="hKb-RT-MKd"/>
-                                <constraint firstAttribute="width" constant="252" id="kwU-CU-BeS"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -111,8 +112,19 @@
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5QT-nA-yLP" secondAttribute="bottom" constant="15" id="937-Yt-Mdt"/>
+                        <constraint firstItem="AcO-bC-NFG" firstAttribute="top" secondItem="Far-RT-8ji" secondAttribute="top" constant="29" id="Cze-sM-KPh"/>
+                        <constraint firstItem="5QT-nA-yLP" firstAttribute="top" secondItem="ogG-43-x6C" secondAttribute="bottom" constant="25" id="DB1-gv-lYQ"/>
+                        <constraint firstItem="NuB-W3-E4f" firstAttribute="leading" secondItem="Far-RT-8ji" secondAttribute="leading" constant="20" id="DcO-Jd-hmc"/>
                         <constraint firstAttribute="width" constant="500" id="EuN-4h-U5A"/>
+                        <constraint firstItem="ogG-43-x6C" firstAttribute="top" secondItem="Far-RT-8ji" secondAttribute="top" constant="20" id="LBf-hM-iGl"/>
+                        <constraint firstAttribute="trailing" secondItem="ogG-43-x6C" secondAttribute="trailing" constant="20" id="XSw-9u-aLi"/>
                         <constraint firstAttribute="height" constant="140" id="a8k-XX-elW"/>
+                        <constraint firstItem="5QT-nA-yLP" firstAttribute="top" secondItem="ogG-43-x6C" secondAttribute="bottom" constant="25" id="dlt-gB-Xf8"/>
+                        <constraint firstAttribute="bottom" secondItem="NuB-W3-E4f" secondAttribute="bottom" constant="25" id="h3b-S3-jRi"/>
+                        <constraint firstItem="NuB-W3-E4f" firstAttribute="top" secondItem="AcO-bC-NFG" secondAttribute="bottom" constant="44" id="jTZ-cz-tIV"/>
+                        <constraint firstItem="AcO-bC-NFG" firstAttribute="leading" secondItem="Far-RT-8ji" secondAttribute="leading" constant="20" id="oNW-mp-JaR"/>
+                        <constraint firstAttribute="trailing" secondItem="5QT-nA-yLP" secondAttribute="trailing" constant="20" id="yz7-A6-faM"/>
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dancingwiththestars.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PVj-bq-996">
@@ -127,6 +139,7 @@
                     <rect key="frame" x="14" y="289" width="241" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="L7K-2J-vDf"/>
                         <constraint firstAttribute="height" constant="21" id="V0s-6g-o3t"/>
                         <constraint firstAttribute="width" constant="252" id="eBD-m0-k7i"/>
                     </constraints>
@@ -137,6 +150,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="kMd-qL-0cY" firstAttribute="top" secondItem="JU6-uI-9tl" secondAttribute="bottom" constant="41" id="KQR-re-e00"/>
+                <constraint firstItem="kMd-qL-0cY" firstAttribute="leading" secondItem="2Uj-ry-f7X" secondAttribute="leading" constant="14" id="eXo-GD-Rc6"/>
                 <constraint firstItem="PVj-bq-996" firstAttribute="top" secondItem="kMd-qL-0cY" secondAttribute="bottom" constant="3" id="fIV-jY-qcz"/>
                 <constraint firstItem="Far-RT-8ji" firstAttribute="top" secondItem="PVj-bq-996" secondAttribute="bottom" constant="33" id="nUU-io-Oei"/>
                 <constraint firstItem="Far-RT-8ji" firstAttribute="leading" secondItem="2Uj-ry-f7X" secondAttribute="leading" constant="14" id="v1x-DX-F76"/>
