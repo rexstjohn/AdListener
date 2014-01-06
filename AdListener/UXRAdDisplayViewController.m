@@ -8,6 +8,7 @@
 
 #import "UXRAdDisplayViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "CMPopTipView.h"
 
 @interface UXRAdDisplayViewController ()
 @property(nonatomic,strong) MPMoviePlayerController *moviePlayer;
@@ -44,6 +45,16 @@
                                                  name: MPMoviePlayerPlaybackDidFinishNotification object:nil];
     
     self.questionView.alpha = 0;
+    self.tidePodsImageView.alpha = 0;
+    
+    // Show a pop up dialog
+    CMPopTipView *popTipView = [[CMPopTipView alloc] initWithMessage:@"Answer this question after the video to earn points!"];
+    popTipView.has3DStyle = NO;
+    popTipView.backgroundColor = [UIColor lightGrayColor];
+    popTipView.delegate = self;
+    popTipView.hasGradientBackground = NO;
+    [popTipView presentPointingAtView:self.questionLabel inView:self.view animated:YES];
+    // [navBarLeftButtonPopTipView dismissAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,12 +63,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Pop up tip delegate
+
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView{
+    
+}
+
 #pragma mark - Notifications
 
 -(void)didFinishMovie:(NSNotification*)notification{
     [UIView animateWithDuration:1.0f animations:^{
         self.moviePlayer.view.alpha = 0;
         self.questionView.alpha = 1;
+        self.tidePodsImageView.alpha = 1;
     }];
 }
 
@@ -69,6 +88,7 @@
     [UIView animateWithDuration:1.0f animations:^{
         self.moviePlayer.view.alpha = 1;
         self.questionView.alpha = 0;
+        self.tidePodsImageView.alpha = 0;
     }];
 }
 

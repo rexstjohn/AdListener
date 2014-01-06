@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "UXRButton.h"
 #import "UXRLabel.h"
+#import "CMPopTipView.h"
 
-@interface UXRHomeViewController : UIViewController
+@interface UXRHomeViewController : UIViewController <CMPopTipViewDelegate>
 @property(nonatomic,weak) IBOutlet UXRButton *listenButton;
 @property(nonatomic,weak) IBOutlet UXRButton *redeemPointsButton;
 @property(nonatomic,weak) IBOutlet UXRButton *skipButton;

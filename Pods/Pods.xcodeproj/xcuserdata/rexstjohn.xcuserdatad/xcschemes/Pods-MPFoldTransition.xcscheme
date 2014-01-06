@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5385543547BE4731BAF98BB8"
+               BlueprintIdentifier = "DE993E252D614C1997461C75"
                BuildableName = "libPods-MPFoldTransition.a"
                BlueprintName = "Pods-MPFoldTransition"
                ReferencedContainer = "container:Pods.xcodeproj">

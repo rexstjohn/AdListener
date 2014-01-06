@@ -120,6 +120,8 @@
 		517B42C31873489400A07A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517B42A21873489400A07A0A /* UIKit.framework */; };
 		517B42CB1873489400A07A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 517B42C91873489400A07A0A /* InfoPlist.strings */; };
 		517B42CD1873489400A07A0A /* AdListenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517B42CC1873489400A07A0A /* AdListenerTests.m */; };
+		5181448A187A22B300221C3E /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51814489187A22B300221C3E /* CMPopTipView.m */; };
+		5181448B187A22B300221C3E /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51814489187A22B300221C3E /* CMPopTipView.m */; };
 		51ACA48D1878A941003E41BA /* UXRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA48C1878A941003E41BA /* UXRHomeViewController.m */; };
 		51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
 		51ACA4911878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
@@ -287,6 +289,8 @@
 		517B42C81873489400A07A0A /* AdListenerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdListenerTests-Info.plist"; sourceTree = "<group>"; };
 		517B42CA1873489400A07A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		517B42CC1873489400A07A0A /* AdListenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdListenerTests.m; sourceTree = "<group>"; };
+		51814488187A22B300221C3E /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		51814489187A22B300221C3E /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
 		51ACA48B1878A941003E41BA /* UXRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeViewController.h; sourceTree = "<group>"; };
 		51ACA48C1878A941003E41BA /* UXRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeViewController.m; sourceTree = "<group>"; };
 		51ACA48F1878A9F3003E41BA /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
@@ -514,6 +518,8 @@
 		513C5D74187785F100AAFB35 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				51814488187A22B300221C3E /* CMPopTipView.h */,
+				51814489187A22B300221C3E /* CMPopTipView.m */,
 				513C5E2318778A7700AAFB35 /* MapKitUtilities.h */,
 			);
 			name = Utilities;
@@ -940,6 +946,7 @@
 				513C5DCE1877866E00AAFB35 /* UIFont+EnumerateFonts.m in Sources */,
 				513C5DDC1877866E00AAFB35 /* UIView+AddBorderWithColor.m in Sources */,
 				513C5DF41877869200AAFB35 /* UXRSmartView.m in Sources */,
+				5181448A187A22B300221C3E /* CMPopTipView.m in Sources */,
 				513C5E1E1877892E00AAFB35 /* UXRBaseCollectionViewController.m in Sources */,
 				513C5DFD187786AE00AAFB35 /* UXRAttributedLabel.m in Sources */,
 				517B42B81873489400A07A0A /* UXRViewController.m in Sources */,
@@ -993,6 +1000,7 @@
 				513C5DEB1877866E00AAFB35 /* UIImage+Colorize.m in Sources */,
 				513C5E4418778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */,
 				513C5DC71877866E00AAFB35 /* NSString+Utils.m in Sources */,
+				5181448B187A22B300221C3E /* CMPopTipView.m in Sources */,
 				513C5E2A18778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */,
 				513C5DBD1877866E00AAFB35 /* CLLocation+Testing.m in Sources */,
 				51ACA4B11878BDA0003E41BA /* UIImage+animatedGIF.m in Sources */,

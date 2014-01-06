@@ -31,6 +31,20 @@
 	// Do any additional setup after loading the view.
     self.navigationController.navigationBarHidden = YES;
     [self.listeningLabel setFrameX:1000];
+    
+    //
+    CMPopTipView *popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
+    popTipView.has3DStyle = NO;
+    popTipView.hasGradientBackground = NO;
+    popTipView.backgroundColor = [UIColor lightGrayColor];
+    popTipView.delegate = self;
+    [popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
+}
+
+#pragma mark - Pop up tip delegate
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView{
+    
 }
 
 #pragma mark - Actions.

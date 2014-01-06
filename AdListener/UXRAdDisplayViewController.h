@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UXRLabel.h"
+#import "CMPopTipView.h"
 
-@interface UXRAdDisplayViewController : UIViewController
+@interface UXRAdDisplayViewController : UIViewController <CMPopTipViewDelegate>
 @property(nonatomic,weak) IBOutlet UIImageView* tidePodsImageView;
 @property(nonatomic,weak) IBOutlet UIView* questionView;
+@property(nonatomic,weak) IBOutlet UXRLabel *questionLabel;
 -(IBAction)replayButtonAction:(id)sender;
 -(IBAction)wrongButtonAction:(id)sender;
 -(IBAction)rightButtonAction:(id)sender;
