@@ -20,13 +20,10 @@
 
 @implementation UXRAdDisplayViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.moviePlayer stop];
+    [self.popTipView dismissAnimated:YES];
 }
 
 - (void)viewDidLoad

@@ -38,9 +38,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
-    
-    
     //
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.popTipView dismissAnimated:YES];
 }
 
 -(void)dealloc{
@@ -73,13 +76,6 @@
         self.headerView = [UXRHeaderCollectionReuseableView collectionReusableViewForCollectionView:collectionView forIndexPath:indexPath withKind:kind];
         reusableview = self.headerView;
         
-        // Pop tip
-        self.popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
-        self.popTipView.has3DStyle = NO;
-        self.popTipView.hasGradientBackground = NO;
-        self.popTipView.backgroundColor = [UIColor lightGrayColor];
-        self.popTipView.delegate = self;
-        [self.popTipView presentPointingAtView:self.headerView.redeemButton inView:self.view animated:YES];
     }
     
     return reusableview;
@@ -113,7 +109,7 @@
 #pragma mark - Actions
 
 -(void)didTapRewatch:(NSNotification*)sender{
-    [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:self];
+    [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:@"tide"];
 }
 
 -(void)didTapListen:(NSNotification*)sender{
@@ -165,7 +161,7 @@
     NSString *item = self.homeScreenTitles[indexPath.row];
     
     if([item isEqualToString:@"Twix"] == YES){
-        [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:nil];
+        [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:item];
     }
 }
 
@@ -176,7 +172,11 @@
     
     if([segueId isEqualToString:WATCH_AD_SEGUE]){
         UXRAdDisplayViewController *adViewController = (UXRAdDisplayViewController*)[segue destinationViewController];
-        adViewController.adType = @"twix";
+        adViewController.adType = (NSString*)sender;
+    } else if([segueId isEqualToString:REDEEM_SEGUE]){
+        
+    } else if([segueId isEqualToString:LISTEN_SEGUE]){
+        
     }
 }
 

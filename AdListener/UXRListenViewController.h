@@ -21,8 +21,7 @@
 @property(nonatomic,weak) IBOutlet UIImageView *listenImageView;
 @property(nonatomic,weak) IBOutlet UIImageView *equalizerImageView;
 @property(nonatomic,weak) IBOutlet UXRButton* closeButton;
--(IBAction)didTapListen:(id)sender;
--(IBAction)didTapRedeemPoints:(id)sender;
+-(IBAction)didTapListen:(id)sender; 
 -(IBAction)didTapCancel:(id)sender;
 -(IBAction)didTapEarnPoints:(id)sender;
 @end
