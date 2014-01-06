@@ -12,6 +12,7 @@
 
 @interface UXRHomeViewController ()
 @property(nonatomic,strong) CMPopTipView *popTipView;
+@property(nonatomic,assign) BOOL wasCancelled;
 @end
 
 @implementation UXRHomeViewController
@@ -50,6 +51,7 @@
 #pragma mark - Actions.
 
 -(IBAction)didTapListen:(id)sender{
+    self.wasCancelled = NO;
     [self.popTipView dismissAnimated:YES];
     
     [UIView animateWithDuration:1.0f animations:^{
@@ -82,7 +84,7 @@
 }
 
 -(IBAction)didTapCancel:(id)sender{
-    
+    self.wasCancelled = YES;
     [UIView animateWithDuration:1.0f animations:^{
         self.listenImageView.alpha = .5;
         self.skipButton.alpha = 1;
@@ -101,6 +103,10 @@
 #pragma mark - Listening Logic
 
 -(void)didDetectAdvertisement{
+    
+    if(self.wasCancelled == YES){
+        return;
+    }
     
     self.detectedView.alpha = 0;
     self.detectedView.hidden = NO;

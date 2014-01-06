@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UXRHomeCollectionHeaderReusableView : UICollectionReusableView
+@interface UXRBaseCollectionReuseableView : UICollectionReusableView
 
 @end

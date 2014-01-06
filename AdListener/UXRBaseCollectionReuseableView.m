@@ -5,9 +5,9 @@
 //  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
-#import "UXRHomeCollectionHeaderReusableView.h"
+#import "UXRBaseCollectionReuseableView.h"
 
-@implementation UXRHomeCollectionHeaderReusableView
+@implementation UXRBaseCollectionReuseableView
 
 - (id)initWithFrame:(CGRect)frame
 {

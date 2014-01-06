@@ -27,13 +27,18 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="nCF-AV-z1u">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="weJ-nt-Dhf">
                             <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="95"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UXRHeaderCollectionReuseableView" id="k5A-ri-qIQ" customClass="UXRHeaderCollectionReuseableView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="95"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="cRT-8M-KGb" id="fPr-8v-BLY"/>
                             <outlet property="delegate" destination="cRT-8M-KGb" id="6gG-bv-a2M"/>
@@ -99,7 +104,6 @@
                                         </state>
                                         <connections>
                                             <action selector="replayButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="i8C-em-aIv"/>
-                                            <segue destination="f0U-aU-UB3" kind="push" id="MUe-or-DfZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52b-lb-f8w" customClass="UXRButton">
@@ -124,7 +128,6 @@
                                         </state>
                                         <connections>
                                             <action selector="rightButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="gfm-HU-aNY"/>
-                                            <segue destination="cRT-8M-KGb" kind="push" identifier="PushAdCollectionViewSegue" id="OzR-HH-WjN"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award: 500 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-ss-U1Q">
@@ -137,13 +140,6 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq3-uf-zjm">
-                                <rect key="frame" x="323" y="791" width="123" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -297,7 +293,7 @@
                                     <action selector="didTapListen:" destination="vb8-NH-34e" eventType="touchUpInside" id="LVC-0z-uPu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -362,7 +358,7 @@
                                             <segue destination="Z8Q-Nw-6vU" kind="push" identifier="EarnPointsSegue" id="uoZ-gU-4ah"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Advertisement Detected!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alg-aN-Dfu">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Advertisement Detected!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alg-aN-Dfu">
                                         <rect key="frame" x="75" y="259" width="190" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -374,6 +370,7 @@
                                 <constraints>
                                     <constraint firstItem="alg-aN-Dfu" firstAttribute="top" secondItem="zST-tP-kTd" secondAttribute="bottom" constant="16" id="5VS-Wz-gVE"/>
                                     <constraint firstAttribute="trailing" secondItem="Zqf-Bf-nXR" secondAttribute="trailing" constant="54" id="ELF-2T-T9B"/>
+                                    <constraint firstAttribute="centerX" secondItem="alg-aN-Dfu" secondAttribute="centerX" id="FGE-mg-ng2"/>
                                     <constraint firstAttribute="bottom" secondItem="Zqf-Bf-nXR" secondAttribute="bottom" constant="20" id="G4p-QK-AlC"/>
                                     <constraint firstItem="Zqf-Bf-nXR" firstAttribute="top" secondItem="alg-aN-Dfu" secondAttribute="bottom" constant="14" id="UcD-OK-2bp"/>
                                     <constraint firstItem="Zqf-Bf-nXR" firstAttribute="leading" secondItem="uG5-ra-gV6" secondAttribute="leading" constant="57" id="WQi-4j-wVQ"/>
@@ -388,6 +385,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="cRg-vj-mLh" secondAttribute="centerX" id="CiA-Pq-h3a"/>
+                            <constraint firstAttribute="centerX" secondItem="eEI-df-pay" secondAttribute="centerX" id="E4T-9E-sF3"/>
                             <constraint firstItem="cRg-vj-mLh" firstAttribute="top" secondItem="ctH-F3-ff6" secondAttribute="bottom" constant="34" id="Ngd-Pg-rel"/>
                             <constraint firstItem="eEI-df-pay" firstAttribute="top" secondItem="uG5-ra-gV6" secondAttribute="bottom" constant="95" id="OFl-DS-jpw"/>
                             <constraint firstAttribute="trailing" secondItem="uG5-ra-gV6" secondAttribute="trailing" constant="216" id="TxT-iS-BQO"/>
@@ -478,7 +476,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wUO-3w-7sL"/>
-        <segue reference="OzR-HH-WjN"/>
+        <segue reference="KtJ-WM-rPm"/>
     </inferredMetricsTieBreakers>
 </document>

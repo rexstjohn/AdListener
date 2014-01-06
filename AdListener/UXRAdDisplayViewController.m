@@ -94,7 +94,7 @@
                                                     message:@"Click the replay button to view the ad again and answer the question to recieve your award."
                                                    delegate:nil
                                           cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Ok", nil]; 
+                                          otherButtonTitles: nil];
     alert.style = WCAlertViewStyleWhite;
     [alert show];
 }
@@ -104,7 +104,7 @@
                                                     message:@"You just earned 4,000 points!"
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Ok", nil];
+                                          otherButtonTitles:@"Ok", "Spend Points Now", nil];
     alert.style = WCAlertViewStyleWhite;
     [alert show];
     

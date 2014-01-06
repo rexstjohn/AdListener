@@ -7,7 +7,7 @@
 
 #import "UXRHomeCollectionViewController.h" 
 #import "UXRHomeCollectionViewCell.h"
-#import "UXRHomeCollectionHeaderReusableView.h"
+#import "UXRBaseCollectionReuseableView.h"
 
 @interface UXRHomeCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenItems;
@@ -36,7 +36,7 @@
     UICollectionReusableView *reusableview = nil;
     
     if (kind == UICollectionElementKindSectionHeader) {
-        UXRHomeCollectionHeaderReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHomeCollectionHeaderReusableView" forIndexPath:indexPath];
+        UXRBaseCollectionReuseableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHomeCollectionHeaderReusableView" forIndexPath:indexPath];
         reusableview = headerView;
     }
     
