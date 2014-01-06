@@ -121,7 +121,6 @@
                     <rect key="frame" x="14" y="313" width="500" height="336"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="EkF-7W-N4i"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="336" id="blY-2J-faA"/>
                     </constraints>
                 </imageView>
@@ -141,7 +140,9 @@
                 <constraint firstItem="oNK-N1-BM7" firstAttribute="top" secondItem="5bj-WV-d8W" secondAttribute="bottom" constant="33" id="0IB-qn-Q6H"/>
                 <constraint firstItem="oFi-s6-Nk7" firstAttribute="top" secondItem="wbs-P7-SAd" secondAttribute="bottom" constant="41" id="5p3-vt-VEZ"/>
                 <constraint firstItem="oNK-N1-BM7" firstAttribute="leading" secondItem="ivo-WX-5fC" secondAttribute="leading" constant="14" id="SgW-VU-6sE"/>
+                <constraint firstAttribute="trailing" secondItem="5bj-WV-d8W" secondAttribute="trailing" constant="15" id="Xzf-dW-e9s"/>
                 <constraint firstItem="5bj-WV-d8W" firstAttribute="top" secondItem="oFi-s6-Nk7" secondAttribute="bottom" constant="3" id="udK-zG-Eym"/>
+                <constraint firstItem="5bj-WV-d8W" firstAttribute="leading" secondItem="ivo-WX-5fC" secondAttribute="leading" constant="14" id="xyi-Ln-wcB"/>
             </constraints>
             <connections>
                 <outlet property="redeemButton" destination="yWj-wm-W3O" id="QKp-kR-Doj"/>

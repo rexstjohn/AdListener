@@ -14,4 +14,11 @@ extern NSString* TESTFLIGHT_TOKEN;
 extern NSString* LISTEN_REQUEST_NOTIFICATION;
 extern NSString* REDEEM_REQUEST_NOTIFICATION;
 extern NSString* REWATCH_REQUEST_NOTIFICATION;
+
+// segues.
+extern NSString* WATCH_AD_SEGUE;
+extern NSString* REDEEM_SEGUE;
+extern NSString* LISTEN_SEGUE;
+extern NSString* AD_DETECTED_SEGUE;
+
 @end

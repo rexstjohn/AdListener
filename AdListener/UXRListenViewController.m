@@ -6,27 +6,17 @@
 //  Copyright (c) 2014 UX-RX. All rights reserved.
 //
 
-#import "UXRHomeViewController.h"
+#import "UXRListenViewController.h"
 #import "UIView+SimpleSizing.h"
 #import "UIImage+animatedGIF.h"
 #import "StarRatingView.h"
 #import "UXRAdDisplayViewController.h"
 
-@interface UXRHomeViewController ()
-@property(nonatomic,strong) CMPopTipView *popTipView;
+@interface UXRListenViewController ()
 @property(nonatomic,assign) BOOL wasCancelled;
 @end
 
-@implementation UXRHomeViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation UXRListenViewController
 
 - (void)viewDidLoad
 {
@@ -34,29 +24,12 @@
 	// Do any additional setup after loading the view.
     [self.listeningLabel setFrameX:1000];
     
-    //
-    self.popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
-    self.popTipView.has3DStyle = NO;
-    self.popTipView.hasGradientBackground = NO;
-    self.popTipView.backgroundColor = [UIColor lightGrayColor];
-    self.popTipView.delegate = self;
-    [self.popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-}
-
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.popTipView dismissAnimated:YES];
-}
+} 
 
 #pragma mark - Pop up tip delegate
 
@@ -67,13 +40,10 @@
 #pragma mark - Actions.
 
 -(IBAction)didTapListen:(id)sender{
-    self.wasCancelled = NO;
-    [self.popTipView dismissAnimated:YES];
+    self.wasCancelled = NO; 
     
     [UIView animateWithDuration:1.0f animations:^{
-        self.listenImageView.alpha = 1;
-        self.skipButton.alpha = 0;
-        self.profileView.alpha = 0;
+        self.listenImageView.alpha = 1; 
         self.listenButton.alpha = 0;
         self.cancelButton.alpha = 1;
         self.equalizerImageView.alpha = 1;
@@ -89,31 +59,26 @@
     // Animated gif.
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"equalizer_white_2" withExtension:@"gif"];
     self.equalizerImageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url]];
-}
-
--(IBAction)didTapRedeemPoints:(id)sender{
-    
-}
-
--(IBAction)didTapSkip:(id)sender{
-    
-}
+} 
 
 -(IBAction)didTapCancel:(id)sender{
     self.wasCancelled = YES;
     [UIView animateWithDuration:1.0f animations:^{
-        self.listenImageView.alpha = .5;
-        self.skipButton.alpha = 1;
-        self.profileView.alpha = 1;
-        self.listenButton.alpha = 1;
-        self.cancelButton.alpha = 0;
+        self.listenImageView.alpha = .5; 
         self.equalizerImageView.alpha = 0;
+        self.listenButton.alpha=1;
+        self.cancelButton.alpha =0;
         [self.listeningLabel setFrameX:1000];
     }];
 }
 
 -(IBAction)didTapEarnPoints:(id)sender{
-    
+    //
+    [self performSegueWithIdentifier:AD_DETECTED_SEGUE sender:self];
+}
+
+-(IBAction)closeButtonAction:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Listening Logic
@@ -140,7 +105,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSString *segueId = [segue identifier];
     
-    if([segueId isEqualToString:@"EarnPointsSegue"]){
+    if([segueId isEqualToString:AD_DETECTED_SEGUE]){
         UXRAdDisplayViewController *adViewController = (UXRAdDisplayViewController*)[segue destinationViewController];
         adViewController.adType = @"tide";
     }

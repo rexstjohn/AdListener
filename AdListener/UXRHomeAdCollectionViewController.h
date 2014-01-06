@@ -6,7 +6,8 @@
 //
 
 #import "UXRBaseHorizontalCollectionViewContoller.h"
+#import "CMPopTipView.h"
 
-@interface UXRHomeHorizontalCollectionViewController : UXRBaseHorizontalCollectionViewContoller <UIGestureRecognizerDelegate>
+@interface UXRHomeAdCollectionViewController : UXRBaseHorizontalCollectionViewContoller <UIGestureRecognizerDelegate, CMPopTipViewDelegate>
 
 @end

@@ -5,20 +5,22 @@
 //  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
-#import "UXRHomeHorizontalCollectionViewController.h"
+#import "UXRHomeAdCollectionViewController.h"
 #import "UXRNowPlayingCollectionViewCell.h"
 #import "UXRUserInfoHeaderView.h"
 #import "UXRHeaderCollectionReuseableView.h"
 #import "UXRAdDisplayViewController.h"
 #import "UXRGlobals.h"
+#import "CMPopTipView.h"
 
-@interface UXRHomeHorizontalCollectionViewController ()
+@interface UXRHomeAdCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenImages;
 @property(nonatomic,strong) NSArray *homeScreenTitles;
 @property(nonatomic,strong) UXRHeaderCollectionReuseableView *headerView;
+@property(nonatomic,strong) CMPopTipView *popTipView;
 @end
 
-@implementation UXRHomeHorizontalCollectionViewController
+@implementation UXRHomeAdCollectionViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -36,6 +38,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    
+    
+    //
 }
 
 -(void)dealloc{
@@ -67,26 +72,24 @@
     if (kind == UICollectionElementKindSectionHeader) {
         self.headerView = [UXRHeaderCollectionReuseableView collectionReusableViewForCollectionView:collectionView forIndexPath:indexPath withKind:kind];
         reusableview = self.headerView;
-    }
-    
-    if (kind == UICollectionElementKindSectionFooter) {
-        //        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
-        //
-        //        reusableview = footerview;
+        
+        // Pop tip
+        self.popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
+        self.popTipView.has3DStyle = NO;
+        self.popTipView.hasGradientBackground = NO;
+        self.popTipView.backgroundColor = [UIColor lightGrayColor];
+        self.popTipView.delegate = self;
+        [self.popTipView presentPointingAtView:self.headerView.redeemButton inView:self.view animated:YES];
     }
     
     return reusableview;
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-//    NOTE: In horizontal layout, the width is used for the height
-//    // Return proper header sizing.
-//    if (section == 0) {
-//        return CGSizeMake(64,0);
-//    }
-//    
-//    return CGSizeZero;
-//}
+#pragma mark - Pop up tip delegate
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView{
+    
+}
 
 #pragma mark -
 
@@ -110,16 +113,15 @@
 #pragma mark - Actions
 
 -(void)didTapRewatch:(NSNotification*)sender{
-    [self performSegueWithIdentifier:@"PushAdViewSegue" sender:self];
+    [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:self];
 }
 
 -(void)didTapListen:(NSNotification*)sender{
-    [self performSegueWithIdentifier:@"PushListenSegue" sender:self];
+    [self performSegueWithIdentifier:LISTEN_SEGUE sender:self];
 }
 
-
 -(void)didTapRedeem:(NSNotification*)sender{
-    [self performSegueWithIdentifier:@"RedeemPointsSegue" sender:self];
+    [self performSegueWithIdentifier:REDEEM_SEGUE sender:self];
 }
 
 #pragma mark - Gesutres
@@ -163,8 +165,7 @@
     NSString *item = self.homeScreenTitles[indexPath.row];
     
     if([item isEqualToString:@"Twix"] == YES){
-        
-        [self performSegueWithIdentifier:@"PushAdViewSegue" sender:nil];
+        [self performSegueWithIdentifier:WATCH_AD_SEGUE sender:nil];
     }
 }
 
@@ -173,7 +174,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSString *segueId = [segue identifier];
     
-    if([segueId isEqualToString:@"PushAdViewSegue"]){
+    if([segueId isEqualToString:WATCH_AD_SEGUE]){
         UXRAdDisplayViewController *adViewController = (UXRAdDisplayViewController*)[segue destinationViewController];
         adViewController.adType = @"twix";
     }

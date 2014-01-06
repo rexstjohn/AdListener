@@ -46,12 +46,6 @@
         [self.headerView.closeButton addTarget:self action:@selector(didTapClose:) forControlEvents:UIControlEventTouchUpInside];
     }
     
-    if (kind == UICollectionElementKindSectionFooter) {
-//        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
-//        
-//        reusableview = footerview;
-    }
-    
     return reusableview;
 }
 
@@ -60,7 +54,6 @@
 -(IBAction)didTapClose:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 #pragma mark - UICollectionView Datasource
 
@@ -71,4 +64,5 @@
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     return self.homeScreenTitles.count;
 }
+
 @end

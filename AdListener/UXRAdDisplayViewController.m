@@ -105,6 +105,10 @@
 
 #pragma mark - Actions
 
+-(IBAction)closeButtonAction:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(IBAction)replayButtonAction:(id)sender{
     
     [self.moviePlayer play];
@@ -142,9 +146,9 @@
     if(buttonIndex == alertView.cancelButtonIndex){
         
     } else if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Ok"] == YES){
-        [self performSegueWithIdentifier:@"PushAdCollectionViewSegue" sender:self];
+        [self dismissViewControllerAnimated:YES completion:nil];
     } else if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Spend Points Now"] == YES){
-        [self performSegueWithIdentifier:@"PushOffersViewSegue" sender:self];
+        [self performSegueWithIdentifier:REDEEM_SEGUE sender:self];
     }
 }
 

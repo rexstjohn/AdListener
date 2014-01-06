@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UXRLabel.h"
+#import "UXRButton.h"
 #import "CMPopTipView.h"
 
 @interface UXRAdDisplayViewController : UIViewController <CMPopTipViewDelegate, UIAlertViewDelegate>
 @property(nonatomic,weak) IBOutlet UIImageView* tidePodsImageView;
 @property(nonatomic,weak) IBOutlet UIView* starView;;
 @property(nonatomic,weak) IBOutlet UIView* questionView;
+@property(nonatomic,weak) IBOutlet UXRButton* closeButton;
 @property(nonatomic,weak) IBOutlet UXRLabel *questionLabel;
 @property(nonatomic,strong) NSString *adType;
 -(IBAction)replayButtonAction:(id)sender;

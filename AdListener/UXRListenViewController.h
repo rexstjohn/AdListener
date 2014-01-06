@@ -11,20 +11,18 @@
 #import "UXRLabel.h"
 #import "CMPopTipView.h"
 
-@interface UXRHomeViewController : UIViewController <CMPopTipViewDelegate>
+@interface UXRListenViewController : UIViewController <CMPopTipViewDelegate>
 @property(nonatomic,weak) IBOutlet UXRButton *listenButton;
 @property(nonatomic,weak) IBOutlet UXRButton *redeemPointsButton;
-@property(nonatomic,weak) IBOutlet UXRButton *skipButton;
 @property(nonatomic,weak) IBOutlet UXRButton *cancelButton;
 @property(nonatomic,weak) IBOutlet UXRButton *detectedButton;
 @property(nonatomic,weak) IBOutlet UXRLabel *listeningLabel;
-@property(nonatomic,weak) IBOutlet UIView *profileView;
 @property(nonatomic,weak) IBOutlet UIView *detectedView;
 @property(nonatomic,weak) IBOutlet UIImageView *listenImageView;
 @property(nonatomic,weak) IBOutlet UIImageView *equalizerImageView;
+@property(nonatomic,weak) IBOutlet UXRButton* closeButton;
 -(IBAction)didTapListen:(id)sender;
 -(IBAction)didTapRedeemPoints:(id)sender;
--(IBAction)didTapSkip:(id)sender;
 -(IBAction)didTapCancel:(id)sender;
 -(IBAction)didTapEarnPoints:(id)sender;
 @end

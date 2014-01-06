@@ -86,7 +86,7 @@
 		513C5E1E1877892E00AAFB35 /* UXRBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E151877892E00AAFB35 /* UXRBaseCollectionViewController.m */; };
 		513C5E1F1877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */; };
 		513C5E201877892E00AAFB35 /* UXRGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E191877892E00AAFB35 /* UXRGlobals.m */; };
-		513C5E221877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */; };
+		513C5E221877892E00AAFB35 /* UXRHomeAdCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1D1877892E00AAFB35 /* UXRHomeAdCollectionViewController.m */; };
 		513C5E2518778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXROfferCollectionViewCell.xib */; };
 		513C5E2618778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXROfferCollectionViewCell.xib */; };
 		513C5E2918778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */; };
@@ -145,7 +145,7 @@
 		518144B0187A466A00221C3E /* 5starflip.png in Resources */ = {isa = PBXBuildFile; fileRef = 518144AE187A466A00221C3E /* 5starflip.png */; };
 		518144B2187A501700221C3E /* dancingwiththestars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 518144B1187A501700221C3E /* dancingwiththestars.jpg */; };
 		518144B3187A501700221C3E /* dancingwiththestars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 518144B1187A501700221C3E /* dancingwiththestars.jpg */; };
-		51ACA48D1878A941003E41BA /* UXRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA48C1878A941003E41BA /* UXRHomeViewController.m */; };
+		51ACA48D1878A941003E41BA /* UXRListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACA48C1878A941003E41BA /* UXRListenViewController.m */; };
 		51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
 		51ACA4911878A9F3003E41BA /* no_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA48F1878A9F3003E41BA /* no_image.jpg */; };
 		51ACA4931878ABD1003E41BA /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4921878ABD1003E41BA /* background.jpg */; };
@@ -286,8 +286,8 @@
 		513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseHorizontalCollectionViewContoller.m; sourceTree = "<group>"; };
 		513C5E181877892E00AAFB35 /* UXRGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRGlobals.h; sourceTree = "<group>"; };
 		513C5E191877892E00AAFB35 /* UXRGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRGlobals.m; sourceTree = "<group>"; };
-		513C5E1C1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeHorizontalCollectionViewController.h; sourceTree = "<group>"; };
-		513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeHorizontalCollectionViewController.m; sourceTree = "<group>"; };
+		513C5E1C1877892E00AAFB35 /* UXRHomeAdCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeAdCollectionViewController.h; sourceTree = "<group>"; };
+		513C5E1D1877892E00AAFB35 /* UXRHomeAdCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeAdCollectionViewController.m; sourceTree = "<group>"; };
 		513C5E2318778A7700AAFB35 /* MapKitUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitUtilities.h; sourceTree = "<group>"; };
 		513C5E2418778ADF00AAFB35 /* UXROfferCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXROfferCollectionViewCell.xib; sourceTree = "<group>"; };
 		513C5E2718778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRNowPlayingCollectionViewCell.h; sourceTree = "<group>"; };
@@ -339,8 +339,8 @@
 		518144AB187A448F00221C3E /* 5starsgray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5starsgray.png; sourceTree = "<group>"; };
 		518144AE187A466A00221C3E /* 5starflip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5starflip.png; sourceTree = "<group>"; };
 		518144B1187A501700221C3E /* dancingwiththestars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dancingwiththestars.jpg; sourceTree = "<group>"; };
-		51ACA48B1878A941003E41BA /* UXRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeViewController.h; sourceTree = "<group>"; };
-		51ACA48C1878A941003E41BA /* UXRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeViewController.m; sourceTree = "<group>"; };
+		51ACA48B1878A941003E41BA /* UXRListenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRListenViewController.h; sourceTree = "<group>"; };
+		51ACA48C1878A941003E41BA /* UXRListenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRListenViewController.m; sourceTree = "<group>"; };
 		51ACA48F1878A9F3003E41BA /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
 		51ACA4921878ABD1003E41BA /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		51ACA4951878AD45003E41BA /* listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listen.png; sourceTree = "<group>"; };
@@ -459,8 +459,8 @@
 				517B42B71873489400A07A0A /* UXRViewController.m */,
 				513C5E4118778FEC00AAFB35 /* UXRMoviePlayerViewController.h */,
 				513C5E4218778FEC00AAFB35 /* UXRMoviePlayerViewController.m */,
-				51ACA48B1878A941003E41BA /* UXRHomeViewController.h */,
-				51ACA48C1878A941003E41BA /* UXRHomeViewController.m */,
+				51ACA48B1878A941003E41BA /* UXRListenViewController.h */,
+				51ACA48C1878A941003E41BA /* UXRListenViewController.m */,
 				51ACA4A61878BA20003E41BA /* UXRAdDisplayViewController.h */,
 				51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */,
 			);
@@ -603,8 +603,8 @@
 				513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */,
 				513C5D751877861700AAFB35 /* UXROffersCollectionViewController.h */,
 				513C5D761877861700AAFB35 /* UXROffersCollectionViewController.m */,
-				513C5E1C1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.h */,
-				513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */,
+				513C5E1C1877892E00AAFB35 /* UXRHomeAdCollectionViewController.h */,
+				513C5E1D1877892E00AAFB35 /* UXRHomeAdCollectionViewController.m */,
 			);
 			name = "Collection View Controllers";
 			sourceTree = "<group>";
@@ -1021,7 +1021,7 @@
 				518144A9187A446000221C3E /* StarRatingView.m in Sources */,
 				513C5E05187786D600AAFB35 /* UXRSmartCollectionViewCell.m in Sources */,
 				51ACA4A11878B149003E41BA /* UXRButton.m in Sources */,
-				51ACA48D1878A941003E41BA /* UXRHomeViewController.m in Sources */,
+				51ACA48D1878A941003E41BA /* UXRListenViewController.m in Sources */,
 				513C5DBC1877866E00AAFB35 /* CLLocation+Testing.m in Sources */,
 				513C5DC01877866E00AAFB35 /* NSArray+Sorting.m in Sources */,
 				513C5DCC1877866E00AAFB35 /* UIColor+SimpleColoring.m in Sources */,
@@ -1039,7 +1039,7 @@
 				513C5DBA1877866E00AAFB35 /* CLLocation+isEmpty.m in Sources */,
 				513C5DE21877866E00AAFB35 /* UIView+SimpleSizing.m in Sources */,
 				513C5DE01877866E00AAFB35 /* UIView+ImageCapture.m in Sources */,
-				513C5E221877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m in Sources */,
+				513C5E221877892E00AAFB35 /* UXRHomeAdCollectionViewController.m in Sources */,
 				513C5DEA1877866E00AAFB35 /* UIImage+Colorize.m in Sources */,
 				513C5DBE1877866E00AAFB35 /* MKMapView+Zooming.m in Sources */,
 				513C5E131877881800AAFB35 /* UXRNavigationViewController.m in Sources */,
