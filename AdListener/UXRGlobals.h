@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @interface UXRGlobals : NSObject
-extern NSString* FOURSQUARE_CLIENT_ID;
+extern NSString* TESTFLIGHT_TOKEN;
 
 @end

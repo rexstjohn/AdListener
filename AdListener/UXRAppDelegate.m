@@ -7,11 +7,14 @@
 //
 
 #import "UXRAppDelegate.h"
+#import <TestFlightSDK/TestFlight.h>
+#import "UXRGlobals.h"
 
 @implementation UXRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [TestFlight takeOff:TESTFLIGHT_TOKEN];
     // Override point for customization after application launch.
     return YES;
 }
