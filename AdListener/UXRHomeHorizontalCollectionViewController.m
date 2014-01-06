@@ -151,8 +151,14 @@
 
 #pragma mark - Selections
 
--(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"PushAdViewSegue" sender:nil];
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSString *item = self.homeScreenTitles[indexPath.row];
+    
+    if([item isEqualToString:@"Twix"] == YES){
+        
+        [self performSegueWithIdentifier:@"PushAdViewSegue" sender:nil];
+    }
 }
 
 #pragma mark - Segues

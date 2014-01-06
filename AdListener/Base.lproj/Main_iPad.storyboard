@@ -262,7 +262,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-vj-mLh">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-vj-mLh">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -318,7 +318,7 @@
                                     <action selector="didTapListen:" destination="vb8-NH-34e" eventType="touchUpInside" id="LVC-0z-uPu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -358,7 +358,7 @@
                                 <rect key="frame" x="338" y="667" width="93" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-ra-gV6">
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-ra-gV6">
                                 <rect key="frame" x="214" y="324" width="338" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -413,15 +413,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cRg-vj-mLh" secondAttribute="centerX" id="CiA-Pq-h3a"/>
                             <constraint firstAttribute="centerX" secondItem="eEI-df-pay" secondAttribute="centerX" id="E4T-9E-sF3"/>
                             <constraint firstItem="cRg-vj-mLh" firstAttribute="top" secondItem="ctH-F3-ff6" secondAttribute="bottom" constant="34" id="Ngd-Pg-rel"/>
                             <constraint firstItem="eEI-df-pay" firstAttribute="top" secondItem="uG5-ra-gV6" secondAttribute="bottom" constant="95" id="OFl-DS-jpw"/>
-                            <constraint firstAttribute="trailing" secondItem="uG5-ra-gV6" secondAttribute="trailing" constant="216" id="TxT-iS-BQO"/>
-                            <constraint firstItem="uG5-ra-gV6" firstAttribute="top" secondItem="cRg-vj-mLh" secondAttribute="bottom" constant="226" id="Vwq-L3-5CX"/>
                             <constraint firstItem="uG5-ra-gV6" firstAttribute="leading" secondItem="0r3-b6-9QN" secondAttribute="leading" constant="214" id="ct4-73-dme"/>
-                            <constraint firstAttribute="trailing" secondItem="cRg-vj-mLh" secondAttribute="trailing" constant="134" id="fMt-is-PBp"/>
-                            <constraint firstItem="cRg-vj-mLh" firstAttribute="leading" secondItem="0r3-b6-9QN" secondAttribute="leading" constant="134" id="xQc-wY-74a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xJp-Sl-HE9"/>
@@ -478,7 +473,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="zxL-0G-yIC"/>
         <segue reference="l5k-CK-8eZ"/>
-        <segue reference="cWs-AB-tka"/>
-        <segue reference="v19-XO-4Y7"/>
+        <segue reference="uoZ-gU-4ah"/>
+        <segue reference="Dwj-Wp-2A3"/>
     </inferredMetricsTieBreakers>
 </document>
