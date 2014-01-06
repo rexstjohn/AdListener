@@ -10,7 +10,7 @@
 #import "UXRLabel.h"
 #import "CMPopTipView.h"
 
-@interface UXRAdDisplayViewController : UIViewController <CMPopTipViewDelegate>
+@interface UXRAdDisplayViewController : UIViewController <CMPopTipViewDelegate, UIAlertViewDelegate>
 @property(nonatomic,weak) IBOutlet UIImageView* tidePodsImageView;
 @property(nonatomic,weak) IBOutlet UIView* questionView;
 @property(nonatomic,weak) IBOutlet UXRLabel *questionLabel;

@@ -99,6 +99,7 @@
                                         </state>
                                         <connections>
                                             <action selector="replayButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="i8C-em-aIv"/>
+                                            <segue destination="f0U-aU-UB3" kind="push" id="MUe-or-DfZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52b-lb-f8w" customClass="UXRButton">
@@ -123,7 +124,7 @@
                                         </state>
                                         <connections>
                                             <action selector="rightButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="gfm-HU-aNY"/>
-                                            <segue destination="cRT-8M-KGb" kind="push" id="OzR-HH-WjN"/>
+                                            <segue destination="cRT-8M-KGb" kind="push" identifier="PushAdCollectionViewSegue" id="OzR-HH-WjN"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award: 500 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-ss-U1Q">
@@ -211,13 +212,22 @@
                     <view key="view" contentMode="scaleToFill" id="rNd-x0-yo8">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Redeem Points Screen Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-d8-aIZ">
+                                <rect key="frame" x="253" y="501" width="262" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="pr3-nt-mZA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGl-8R-fk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="660"/>
+            <point key="canvasLocation" x="517" y="576"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="G1m-ce-XmN">
@@ -468,6 +478,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="wUO-3w-7sL"/>
         <segue reference="OzR-HH-WjN"/>
     </inferredMetricsTieBreakers>
 </document>

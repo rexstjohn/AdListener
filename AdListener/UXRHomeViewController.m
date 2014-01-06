@@ -11,7 +11,7 @@
 #import "UIImage+animatedGIF.h"
 
 @interface UXRHomeViewController ()
-
+@property(nonatomic,strong) CMPopTipView *popTipView;
 @end
 
 @implementation UXRHomeViewController
@@ -33,12 +33,12 @@
     [self.listeningLabel setFrameX:1000];
     
     //
-    CMPopTipView *popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
-    popTipView.has3DStyle = NO;
-    popTipView.hasGradientBackground = NO;
-    popTipView.backgroundColor = [UIColor lightGrayColor];
-    popTipView.delegate = self;
-    [popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
+    self.popTipView = [[CMPopTipView alloc] initWithMessage:@"Watch ads, answer questions and collect points to redeem on products you love."];
+    self.popTipView.has3DStyle = NO;
+    self.popTipView.hasGradientBackground = NO;
+    self.popTipView.backgroundColor = [UIColor lightGrayColor];
+    self.popTipView.delegate = self;
+    [self.popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
 }
 
 #pragma mark - Pop up tip delegate
@@ -50,6 +50,7 @@
 #pragma mark - Actions.
 
 -(IBAction)didTapListen:(id)sender{
+    [self.popTipView dismissAnimated:YES];
     
     [UIView animateWithDuration:1.0f animations:^{
         self.listenImageView.alpha = 1;
