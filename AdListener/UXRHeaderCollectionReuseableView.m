@@ -23,10 +23,13 @@
     [super awakeFromNib];
     self.userInfoView = [[UXRUserInfoHeaderView alloc] initWithFrame:self.frame];
     [self addSubview:self.userInfoView];
+    self.userInfoView.center = self.center;
+    self.userInteractionEnabled = YES;
+    self.userInfoView.userInteractionEnabled = YES;
 }
 
 +(CGSize)sizeForHeaderView{
-    return CGSizeMake(529.0f, 600.0f);
+    return CGSizeMake(529.0f, 1024.0f);
 }
 
 @end

@@ -67,6 +67,9 @@
     starView.label.text = @"Rate this ad";
     starView.backgroundColor = [UIColor clearColor];
     [self.questionView addSubview:starView];
+    
+    //
+    
 }
 
 #pragma mark - Pop up tip delegate

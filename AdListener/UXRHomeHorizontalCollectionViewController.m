@@ -13,6 +13,7 @@
 @interface UXRHomeHorizontalCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenImages;
 @property(nonatomic,strong) NSArray *homeScreenTitles;
+@property(nonatomic,strong) UXRHeaderCollectionReuseableView *headerView;
 @end
 
 @implementation UXRHomeHorizontalCollectionViewController
@@ -21,6 +22,11 @@
     [super viewDidLoad];
     self.homeScreenImages = @[@"nordstrom.jpg", @"phillips.jpg", @"wheaties.jpg", @"norelco.jpg", @"tiffany.jpg", @"tidepods.png"];
     self.homeScreenTitles = @[@"Nordstrom", @"Phillips", @"Wheaties", @"Norelco", @"Tiffany", @"Tidepods"];
+    
+    //
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRewatch:) name:@"REWATCH_NOTIFICAITON" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapListen:) name:@"LISTEN_NOTIFICAITON" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRedeem:) name:@"REDEEM_NOTIFICAITON" object:nil];
 }
 
 #pragma mark - Flow Layout
@@ -45,10 +51,8 @@
     UICollectionReusableView *reusableview = nil;
     
     if (kind == UICollectionElementKindSectionHeader) {
-        UXRHeaderCollectionReuseableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHeaderCollectionReuseableView" forIndexPath:indexPath];
-        reusableview = headerView;
-        [headerView.userInfoView.rewatchButton addTarget:self action:@selector(didTapRewatch:) forControlEvents:UIControlEventTouchUpInside];
-        [headerView.userInfoView.redeemButton addTarget:self action:@selector(didTapRedeem:) forControlEvents:UIControlEventTouchUpInside];
+        self.headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHeaderCollectionReuseableView" forIndexPath:indexPath];
+        reusableview = self.headerView;
     }
     
     if (kind == UICollectionElementKindSectionFooter) {
@@ -83,6 +87,9 @@
     cell.titleLabel.text = self.homeScreenTitles[indexPath.row];
     NSString *imagePath = self.homeScreenImages[indexPath.row];
     [cell.backgroundImageView setImage:[UIImage imageNamed:imagePath]];
+    
+    //
+    
     return cell;
 }
 
@@ -91,6 +98,11 @@
 -(void)didTapRewatch:(id)sender{
     [self performSegueWithIdentifier:@"PushAdViewSegue" sender:self];
 }
+
+-(void)didTapListen:(id)sender{
+    [self performSegueWithIdentifier:@"PushListenSegue" sender:self];
+}
+
 
 -(void)didTapRedeem:(id)sender{
     [self performSegueWithIdentifier:@"PushRedeemSegue" sender:self];

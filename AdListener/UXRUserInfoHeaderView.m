@@ -16,4 +16,15 @@
     return _viewIdentifier;
 }
 
+-(IBAction)didTapListen:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LISTEN_NOTIFICATION" object:nil];
+}
+
+-(IBAction)didTapRewatch:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"REWATCH_NOTIFICATION" object:nil];
+}
+
+-(IBAction)didTapRedeem:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"REDEEM_NOTIFICATION" object:nil];
+}
 @end

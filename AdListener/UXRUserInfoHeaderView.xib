@@ -11,7 +11,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-uI-9tl">
-                    <rect key="frame" x="14" y="241" width="500" height="64"/>
+                    <rect key="frame" x="14" y="179" width="500" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, Kivin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-TF-em2">
@@ -35,6 +35,9 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="didTapRedeem:" destination="2Uj-ry-f7X" eventType="touchUpInside" id="jXW-b0-Tub"/>
+                            </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="41Z-0M-evK">
                             <rect key="frame" x="9" y="6" width="51" height="51"/>
@@ -47,27 +50,81 @@
                         <constraint firstAttribute="width" constant="500" id="kmS-Rd-roP"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tide-pods.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PVj-bq-996">
-                    <rect key="frame" x="14" y="353" width="500" height="336"/>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Far-RT-8ji">
+                    <rect key="frame" x="14" y="702" width="500" height="140"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-43-x6C" customClass="UXRButton">
+                            <rect key="frame" x="350" y="20" width="130" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="3zq-yy-Gp7"/>
+                                <constraint firstAttribute="height" constant="40" id="yIG-lc-rmM"/>
+                            </constraints>
+                            <state key="normal" title="Rewatch">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapRewatch:" destination="2Uj-ry-f7X" eventType="touchUpInside" id="334-XQ-iS0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-nA-yLP" customClass="UXRButton">
+                            <rect key="frame" x="350" y="85" width="130" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jjf-Xd-V1U"/>
+                                <constraint firstAttribute="width" constant="130" id="qAC-Hr-QCI"/>
+                            </constraints>
+                            <state key="normal" title="Listen">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapListen:" destination="2Uj-ry-f7X" eventType="touchUpInside" id="Yja-5P-EBQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcO-bC-NFG">
+                            <rect key="frame" x="20" y="29" width="252" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="252" id="n2J-ai-vbn"/>
+                                <constraint firstAttribute="height" constant="21" id="p2j-VN-er7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Listen for another ad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-W3-E4f">
+                            <rect key="frame" x="20" y="94" width="164" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hKb-RT-MKd"/>
+                                <constraint firstAttribute="width" constant="252" id="kwU-CU-BeS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="EuN-4h-U5A"/>
+                        <constraint firstAttribute="height" constant="140" id="a8k-XX-elW"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dancingwiththestars.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PVj-bq-996">
+                    <rect key="frame" x="14" y="313" width="500" height="336"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="336" id="4Zl-zI-0B2"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="YHN-Dh-t1o"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcO-bC-NFG">
-                    <rect key="frame" x="14" y="742" width="252" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="252" id="n2J-ai-vbn"/>
-                        <constraint firstAttribute="height" constant="21" id="p2j-VN-er7"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points collected: 4,000 / 4,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMd-qL-0cY">
-                    <rect key="frame" x="14" y="761" width="234" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Now Playing: Dancing With The Stars" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMd-qL-0cY">
+                    <rect key="frame" x="14" y="289" width="241" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="V0s-6g-o3t"/>
@@ -76,26 +133,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-43-x6C" customClass="UXRButton">
-                    <rect key="frame" x="384" y="742" width="130" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="130" id="3zq-yy-Gp7"/>
-                        <constraint firstAttribute="height" constant="40" id="yIG-lc-rmM"/>
-                    </constraints>
-                    <state key="normal" title="Rewatch">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ogG-43-x6C" firstAttribute="top" secondItem="PVj-bq-996" secondAttribute="bottom" constant="53" id="DEj-5L-MDL"/>
-                <constraint firstItem="AcO-bC-NFG" firstAttribute="leading" secondItem="2Uj-ry-f7X" secondAttribute="leading" constant="14" id="Ofz-HG-uXW"/>
-                <constraint firstItem="ogG-43-x6C" firstAttribute="leading" secondItem="AcO-bC-NFG" secondAttribute="trailing" constant="118" id="YRd-38-5tn"/>
-                <constraint firstItem="PVj-bq-996" firstAttribute="top" secondItem="JU6-uI-9tl" secondAttribute="bottom" constant="48" id="rOW-El-QAB"/>
+                <constraint firstItem="kMd-qL-0cY" firstAttribute="top" secondItem="JU6-uI-9tl" secondAttribute="bottom" constant="41" id="KQR-re-e00"/>
+                <constraint firstItem="PVj-bq-996" firstAttribute="top" secondItem="kMd-qL-0cY" secondAttribute="bottom" constant="3" id="fIV-jY-qcz"/>
+                <constraint firstItem="Far-RT-8ji" firstAttribute="top" secondItem="PVj-bq-996" secondAttribute="bottom" constant="33" id="nUU-io-Oei"/>
+                <constraint firstItem="Far-RT-8ji" firstAttribute="leading" secondItem="2Uj-ry-f7X" secondAttribute="leading" constant="14" id="v1x-DX-F76"/>
             </constraints>
             <connections>
                 <outlet property="redeemButton" destination="arn-h5-xUh" id="hPh-li-abd"/>
@@ -104,7 +148,7 @@
         </view>
     </objects>
     <resources>
+        <image name="dancingwiththestars.jpg" width="600" height="338"/>
         <image name="no_image.jpg" width="1290" height="1290"/>
-        <image name="tide-pods.jpg" width="292" height="277"/>
     </resources>
 </document>

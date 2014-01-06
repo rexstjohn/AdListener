@@ -49,11 +49,12 @@
                     <connections>
                         <segue destination="Z8Q-Nw-6vU" kind="push" identifier="PushAdViewSegue" id="cWs-AB-tka"/>
                         <segue destination="f0U-aU-UB3" kind="push" identifier="PushRedeemSegue" id="Ztc-wF-4df"/>
+                        <segue destination="vb8-NH-34e" kind="push" identifier="PushListenSegue" id="l5k-CK-8eZ"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421" y="-556"/>
+            <point key="canvasLocation" x="1549" y="-212"/>
         </scene>
         <!--Ad Display View Controller-->
         <scene sceneID="9SR-jB-5NB">
@@ -221,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVw-fX-xXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="443" y="-705"/>
+            <point key="canvasLocation" x="517" y="-673"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7lI-bo-r1e">
@@ -443,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFT-dQ-eun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="-561"/>
+            <point key="canvasLocation" x="-429" y="-133"/>
         </scene>
         <!--Movie Player View Controller-->
         <scene sceneID="54b-dl-uZf">
@@ -479,6 +480,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="KtJ-WM-rPm"/>
         <segue reference="cWs-AB-tka"/>
+        <segue reference="l5k-CK-8eZ"/>
         <segue reference="Ztc-wF-4df"/>
     </inferredMetricsTieBreakers>
 </document>
