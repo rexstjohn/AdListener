@@ -72,6 +72,11 @@
     
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
 #pragma mark - Pop up tip delegate
 
 
@@ -127,8 +132,10 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == alertView.cancelButtonIndex){
         
-    } else{
+    } else if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Ok"] == YES){
         [self performSegueWithIdentifier:@"PushAdCollectionViewSegue" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"PushOffersViewSegue" sender:self];
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 #import "UXRHomeHorizontalCollectionViewController.h"
-#import "UXRHomeCollectionViewCell.h"
+#import "UXROfferCollectionViewCell.h"
 #import "UXRUserInfoHeaderView.h"
 #import "UXRHeaderCollectionReuseableView.h"
 
@@ -83,7 +83,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UXRHomeCollectionViewCell *cell = [UXRHomeCollectionViewCell cellForCollectionView:self.collectionView forIndexPath:indexPath];
+    UXROfferCollectionViewCell *cell = [UXROfferCollectionViewCell cellForCollectionView:self.collectionView forIndexPath:indexPath];
     cell.titleLabel.text = self.homeScreenTitles[indexPath.row];
     NSString *imagePath = self.homeScreenImages[indexPath.row];
     [cell.backgroundImageView setImage:[UIImage imageNamed:imagePath]];

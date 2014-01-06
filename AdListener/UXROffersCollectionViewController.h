@@ -8,6 +8,6 @@
 #import <UIKit/UIKit.h>
 #import "UXRBaseCollectionViewController.h"
 
-@interface UXRHomeCollectionViewController : UXRBaseCollectionViewController
+@interface UXROffersCollectionViewController : UXRBaseCollectionViewController
 
 @end

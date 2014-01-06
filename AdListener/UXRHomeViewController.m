@@ -31,7 +31,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.navigationController.navigationBarHidden = YES;
     [self.listeningLabel setFrameX:1000];
     
     //
@@ -42,6 +41,11 @@
     self.popTipView.delegate = self;
     [self.popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
     
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - Pop up tip delegate

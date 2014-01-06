@@ -9,7 +9,7 @@
 #import "UXRSmartCollectionViewCell.h"
 #import "UXRLabel.h"
 
-@interface UXRHomeCollectionViewCell : UXRSmartCollectionViewCell
+@interface UXROfferCollectionViewCell : UXRSmartCollectionViewCell
 @property (weak, nonatomic) IBOutlet UXRLabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 

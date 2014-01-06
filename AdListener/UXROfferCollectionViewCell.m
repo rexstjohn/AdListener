@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 UX-RX. All rights reserved.
 //
 
-#import "UXRHomeCollectionViewCell.h"
+#import "UXROfferCollectionViewCell.h"
 
-@implementation UXRHomeCollectionViewCell
+@implementation UXROfferCollectionViewCell
 
 + (NSString *)cellIdentifier {
-    static NSString* _cellIdentifier = @"UXRHomeCollectionViewCell";
+    static NSString* _cellIdentifier = @"UXROfferCollectionViewCell";
     _cellIdentifier = NSStringFromClass([self class]);
     return _cellIdentifier;
 }
