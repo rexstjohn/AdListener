@@ -8,7 +8,9 @@
 
 #import "UXRSmartCollectionViewCell.h"
 #import "UXRImageView.h"
+#import "UXRLabel.h"
 
 @interface UXRNowPlayingCollectionViewCell : UXRSmartCollectionViewCell
 @property(nonatomic,weak) IBOutlet UXRImageView* imageView;
+@property(nonatomic,weak) IBOutlet UXRLabel* titleLabel;
 @end

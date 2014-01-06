@@ -17,18 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="205" height="225"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiF-Wa-E82" customClass="UXRLabel">
+                        <rect key="frame" x="0.0" y="198" width="205" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="BkH-I0-hfz" secondAttribute="bottom" id="KAr-AL-XaN"/>
                 <constraint firstAttribute="bottom" secondItem="BkH-I0-hfz" secondAttribute="bottom" id="Ll2-Bc-BfU"/>
                 <constraint firstItem="BkH-I0-hfz" firstAttribute="top" secondItem="biA-et-StQ" secondAttribute="top" id="M8n-ZN-DaG"/>
+                <constraint firstItem="BkH-I0-hfz" firstAttribute="top" secondItem="biA-et-StQ" secondAttribute="top" id="QpG-Rn-28A"/>
+                <constraint firstAttribute="trailing" secondItem="GiF-Wa-E82" secondAttribute="trailing" id="Uni-UL-imE"/>
                 <constraint firstItem="BkH-I0-hfz" firstAttribute="leading" secondItem="biA-et-StQ" secondAttribute="leading" id="bS8-tW-k29"/>
+                <constraint firstAttribute="trailing" secondItem="BkH-I0-hfz" secondAttribute="trailing" id="cJ4-nC-KKS"/>
                 <constraint firstAttribute="trailing" secondItem="BkH-I0-hfz" secondAttribute="trailing" id="dEJ-FM-H5v"/>
+                <constraint firstItem="GiF-Wa-E82" firstAttribute="leading" secondItem="biA-et-StQ" secondAttribute="leading" id="u3E-Gu-tIa"/>
+                <constraint firstAttribute="bottom" secondItem="GiF-Wa-E82" secondAttribute="bottom" id="wff-aG-5vP"/>
+                <constraint firstItem="BkH-I0-hfz" firstAttribute="leading" secondItem="biA-et-StQ" secondAttribute="leading" id="wqC-xB-V1q"/>
             </constraints>
             <size key="customSize" width="205" height="225"/>
             <connections>
                 <outlet property="imageView" destination="BkH-I0-hfz" id="amz-R6-doS"/>
+                <outlet property="titleLabel" destination="GiF-Wa-E82" id="aKj-x4-aJY"/>
             </connections>
         </collectionViewCell>
     </objects>

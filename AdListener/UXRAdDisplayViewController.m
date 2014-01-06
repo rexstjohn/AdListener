@@ -34,7 +34,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: [NSURL fileURLWithPath: [[NSBundle mainBundle]pathForResource: [NSString stringWithFormat:@"tide_commercial"] ofType:@"mp4"]]];
+    if([self.adType isEqualToString:@"tide"]){
+        self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: [NSURL fileURLWithPath: [[NSBundle mainBundle]pathForResource: [NSString stringWithFormat:@"tide_commercial"] ofType:@"mp4"]]];
+        self.tidePodsImageView.image = [UIImage imageNamed:@"tidePods"];
+        self.questionLabel.text = @"How many pod sections are in Tide Pods?";
+    } else {
+        self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: [NSURL fileURLWithPath: [[NSBundle mainBundle]pathForResource: [NSString stringWithFormat:@"twix_commercial"] ofType:@"mp4"]]];
+        self.tidePodsImageView.image = [UIImage imageNamed:@"twix.jpg"];
+        self.questionLabel.text = @"How many layers does a Twix bar have?";
+    }
     
     self.moviePlayer.fullscreen = NO;
     self.moviePlayer.controlStyle = MPMovieControlModeHidden;
@@ -74,7 +82,12 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    if([self.adType isEqualToString:@"tide"]){
+        self.navigationController.navigationBarHidden = YES;
+    } else {
+        self.navigationController.navigationBarHidden = NO;
+    }
+    
 }
 
 #pragma mark - Pop up tip delegate

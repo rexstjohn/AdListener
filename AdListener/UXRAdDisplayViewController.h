@@ -15,6 +15,7 @@
 @property(nonatomic,weak) IBOutlet UIView* starView;;
 @property(nonatomic,weak) IBOutlet UIView* questionView;
 @property(nonatomic,weak) IBOutlet UXRLabel *questionLabel;
+@property(nonatomic,strong) NSString *adType;
 -(IBAction)replayButtonAction:(id)sender;
 -(IBAction)wrongButtonAction:(id)sender;
 -(IBAction)rightButtonAction:(id)sender;

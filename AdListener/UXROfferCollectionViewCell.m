@@ -16,4 +16,15 @@
     return _cellIdentifier;
 }
 
+-(IBAction)didTapSubscribe:(id)sender{
+    
+    if([self.subscribeButton.titleLabel.text isEqualToString:@"Subscribe"]==YES){
+        [self.subscribeButton setTitle:@"Subcsribed" forState:UIControlStateNormal];
+        self.subscribeButton.alpha = .5;
+    } else {
+        [self.subscribeButton setTitle:@"Subcsribe" forState:UIControlStateNormal];
+        self.subscribeButton.alpha = 1;
+    }
+}
+
 @end

@@ -181,6 +181,8 @@
 		51F79945187A66220011C224 /* amazon-prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79943187A66220011C224 /* amazon-prime.jpg */; };
 		51F79947187A67F90011C224 /* starbucks.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51F79946187A67F90011C224 /* starbucks.gif */; };
 		51F79948187A67F90011C224 /* starbucks.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51F79946187A67F90011C224 /* starbucks.gif */; };
+		51F7994A187A6F7F0011C224 /* twix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79949187A6F7F0011C224 /* twix.jpg */; };
+		51F7994B187A6F7F0011C224 /* twix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79949187A6F7F0011C224 /* twix.jpg */; };
 		D095C99C8EE74516B400C4D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD368F1629B249938F95D427 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -358,6 +360,7 @@
 		51F79940187A66070011C224 /* netflix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = netflix.jpg; sourceTree = "<group>"; };
 		51F79943187A66220011C224 /* amazon-prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amazon-prime.jpg"; sourceTree = "<group>"; };
 		51F79946187A67F90011C224 /* starbucks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starbucks.gif; sourceTree = "<group>"; };
+		51F79949187A6F7F0011C224 /* twix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twix.jpg; sourceTree = "<group>"; };
 		8B25CB130BC04F19BF310769 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD368F1629B249938F95D427 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -734,6 +737,7 @@
 		51814490187A32C200221C3E /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				51F79949187A6F7F0011C224 /* twix.jpg */,
 				51F79946187A67F90011C224 /* starbucks.gif */,
 				51F79943187A66220011C224 /* amazon-prime.jpg */,
 				51F79940187A66070011C224 /* netflix.jpg */,
@@ -828,6 +832,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "UX-RX";
 				TargetAttributes = {
+					517B429A1873489400A07A0A = {
+						DevelopmentTeam = SFW5ZW983Y;
+					};
 					517B42BE1873489400A07A0A = {
 						TestTargetID = 517B429A1873489400A07A0A;
 					};
@@ -860,6 +867,7 @@
 				51ACA4B91878BEE2003E41BA /* equalizer_white_2.gif in Resources */,
 				51ACA49C1878AF6D003E41BA /* microphone.jpg in Resources */,
 				51814498187A32CD00221C3E /* phillips.jpg in Resources */,
+				51F7994A187A6F7F0011C224 /* twix.jpg in Resources */,
 				51F79947187A67F90011C224 /* starbucks.gif in Resources */,
 				5181449A187A32CD00221C3E /* wheaties.jpg in Resources */,
 				5181449C187A32CD00221C3E /* norelco.jpg in Resources */,
@@ -910,6 +918,7 @@
 				513C5E2618778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */,
 				51ACA49A1878ADD4003E41BA /* speaker.png in Resources */,
 				51ACA4B71878BE9D003E41BA /* equalizer_white.gif in Resources */,
+				51F7994B187A6F7F0011C224 /* twix.jpg in Resources */,
 				51F79942187A66070011C224 /* netflix.jpg in Resources */,
 				518144AD187A448F00221C3E /* 5starsgray.png in Resources */,
 				51ACA4C01878C502003E41BA /* tidePods.png in Resources */,
@@ -1239,10 +1248,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdListener/AdListener-Prefix.pch";
 				INFOPLIST_FILE = "AdListener/AdListener-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1254,10 +1266,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdListener/AdListener-Prefix.pch";
 				INFOPLIST_FILE = "AdListener/AdListener-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

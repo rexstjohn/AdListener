@@ -8,9 +8,11 @@
 
 #import "UXRSmartCollectionViewCell.h"
 #import "UXRLabel.h"
+#import "UXRButton.h"
 
 @interface UXROfferCollectionViewCell : UXRSmartCollectionViewCell
 @property (weak, nonatomic) IBOutlet UXRLabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UXRButton *subscribeButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end

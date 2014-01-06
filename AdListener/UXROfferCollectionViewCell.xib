@@ -17,21 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="282"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41C-l8-4J1" customClass="UXRLabel">
-                        <rect key="frame" x="0.0" y="249" width="300" height="33"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41C-l8-4J1" customClass="UXRLabel">
+                        <rect key="frame" x="0.0" y="234" width="300" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="33" id="4Ok-UC-DZP"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="GIy-rM-kfL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNz-9Q-yri" customClass="UXRButton">
+                        <rect key="frame" x="205" y="238" width="80" height="39"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="Jqa-wm-6V9"/>
+                            <constraint firstAttribute="width" constant="80" id="z6j-2q-5w3"/>
+                        </constraints>
+                        <state key="normal" title="Subscribe">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapSubscribe:" destination="8kp-Xa-Dzl" eventType="touchUpInside" id="HtZ-LI-vYr"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="jNz-9Q-yri" secondAttribute="bottom" constant="5" id="CfV-C4-XK8"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jNz-9Q-yri" secondAttribute="trailing" constant="15" id="EDi-oY-EiM"/>
                 <constraint firstAttribute="bottom" secondItem="AGF-Pm-Y9j" secondAttribute="bottom" id="HDg-nC-jPb"/>
                 <constraint firstItem="AGF-Pm-Y9j" firstAttribute="leading" secondItem="8kp-Xa-Dzl" secondAttribute="leading" id="Hq6-BK-Awl"/>
                 <constraint firstAttribute="trailing" secondItem="AGF-Pm-Y9j" secondAttribute="trailing" id="K85-52-8Ib"/>
@@ -39,10 +57,12 @@
                 <constraint firstAttribute="bottom" secondItem="41C-l8-4J1" secondAttribute="bottom" id="pGe-V8-vHP"/>
                 <constraint firstItem="AGF-Pm-Y9j" firstAttribute="top" secondItem="8kp-Xa-Dzl" secondAttribute="top" id="sa1-vn-Lgu"/>
                 <constraint firstItem="41C-l8-4J1" firstAttribute="leading" secondItem="8kp-Xa-Dzl" secondAttribute="leading" id="xaI-Xp-5nL"/>
+                <constraint firstAttribute="trailing" secondItem="jNz-9Q-yri" secondAttribute="trailing" constant="15" id="zJL-vy-SuY"/>
             </constraints>
             <size key="customSize" width="300" height="282"/>
             <connections>
                 <outlet property="backgroundImageView" destination="AGF-Pm-Y9j" id="x2v-RF-hhQ"/>
+                <outlet property="subscribeButton" destination="jNz-9Q-yri" id="rdB-Bb-njB"/>
                 <outlet property="titleLabel" destination="41C-l8-4J1" id="Ow1-bV-Vo4"/>
             </connections>
         </collectionViewCell>

@@ -10,15 +10,6 @@
 
 @implementation UXRHeaderCollectionReuseableView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 -(void)awakeFromNib{
     [super awakeFromNib];
     self.userInfoView = [[UXRUserInfoHeaderView alloc] initWithFrame:self.frame];

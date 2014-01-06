@@ -6,9 +6,10 @@
 //
 
 #import "UXRHomeHorizontalCollectionViewController.h"
-#import "UXROfferCollectionViewCell.h"
+#import "UXRNowPlayingCollectionViewCell.h"
 #import "UXRUserInfoHeaderView.h"
 #import "UXRHeaderCollectionReuseableView.h"
+#import "UXRAdDisplayViewController.h"
 
 @interface UXRHomeHorizontalCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenImages;
@@ -20,13 +21,19 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.homeScreenImages = @[@"nordstrom.jpg", @"phillips.jpg", @"wheaties.jpg", @"norelco.jpg", @"tiffany.jpg", @"tidepods.png"];
-    self.homeScreenTitles = @[@"Nordstrom", @"Phillips", @"Wheaties", @"Norelco", @"Tiffany", @"Tidepods"];
+    self.title = @"Watch ads, get points";
+    self.homeScreenImages = @[@"nordstrom.jpg",@"twix.jpg", @"phillips.jpg", @"wheaties.jpg", @"norelco.jpg", @"tiffany.jpg", @"tidepods.png"];
+    self.homeScreenTitles = @[@"Nordstrom",@"Twix",  @"Phillips", @"Wheaties", @"Norelco", @"Tiffany", @"Tidepods"];
     
     //
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRewatch:) name:@"REWATCH_NOTIFICAITON" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapListen:) name:@"LISTEN_NOTIFICAITON" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRedeem:) name:@"REDEEM_NOTIFICAITON" object:nil];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 #pragma mark - Flow Layout
@@ -83,10 +90,10 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UXROfferCollectionViewCell *cell = [UXROfferCollectionViewCell cellForCollectionView:self.collectionView forIndexPath:indexPath];
+    UXRNowPlayingCollectionViewCell *cell = [UXRNowPlayingCollectionViewCell cellForCollectionView:self.collectionView forIndexPath:indexPath];
     cell.titleLabel.text = self.homeScreenTitles[indexPath.row];
     NSString *imagePath = self.homeScreenImages[indexPath.row];
-    [cell.backgroundImageView setImage:[UIImage imageNamed:imagePath]];
+    [cell.imageView setImage:[UIImage imageNamed:imagePath]];
     
     //
     
@@ -139,6 +146,23 @@
         return UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
     } else {
         return UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
+    }
+}
+
+#pragma mark - Selections
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"PushAdViewSegue" sender:nil];
+}
+
+#pragma mark - Segues
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSString *segueId = [segue identifier];
+    
+    if([segueId isEqualToString:@"PushAdViewSegue"]){
+        UXRAdDisplayViewController *adViewController = (UXRAdDisplayViewController*)[segue destinationViewController];
+        adViewController.adType = @"twix";
     }
 }
 

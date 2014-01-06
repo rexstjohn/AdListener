@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.homeScreenTitles = @[@"Netflix $12.99 / month", @"Amazon Prime", @"Starbucks"];
+    self.homeScreenTitles = @[@"  Netflix $12.99 / month", @"  Amazon Prime", @"  Starbucks"];
     self.homeScreenImages = @[@"netflix.jpg", @"amazon-prime.jpg", @"starbucks.gif"];
     self.navigationController.navigationBarHidden = NO;
     self.title = @"Redeem your points";

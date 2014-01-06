@@ -10,6 +10,7 @@
 #import "UIView+SimpleSizing.h"
 #import "UIImage+animatedGIF.h"
 #import "StarRatingView.h"
+#import "UXRAdDisplayViewController.h"
 
 @interface UXRHomeViewController ()
 @property(nonatomic,strong) CMPopTipView *popTipView;
@@ -123,6 +124,17 @@
         self.equalizerImageView.alpha = 0;
         self.detectedView.alpha = 1;
     }];
+}
+
+#pragma mark - Segues
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSString *segueId = [segue identifier];
+    
+    if([segueId isEqualToString:@"EarnPointsSegue"]){
+        UXRAdDisplayViewController *adViewController = (UXRAdDisplayViewController*)[segue destinationViewController];
+        adViewController.adType = @"tide";
+    }
 }
 
 @end

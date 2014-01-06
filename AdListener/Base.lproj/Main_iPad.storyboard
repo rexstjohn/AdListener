@@ -53,7 +53,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549" y="-212"/>
+            <point key="canvasLocation" x="1497" y="222"/>
         </scene>
         <!--Offers Collection View Controller-->
         <scene sceneID="yPN-Wb-DTO">
@@ -476,9 +476,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="KtJ-WM-rPm"/>
-        <segue reference="uoZ-gU-4ah"/>
-        <segue reference="B88-bq-CuI"/>
+        <segue reference="zxL-0G-yIC"/>
+        <segue reference="l5k-CK-8eZ"/>
+        <segue reference="cWs-AB-tka"/>
         <segue reference="v19-XO-4Y7"/>
     </inferredMetricsTieBreakers>
 </document>
