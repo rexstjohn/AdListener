@@ -86,7 +86,6 @@
 		513C5E1E1877892E00AAFB35 /* UXRBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E151877892E00AAFB35 /* UXRBaseCollectionViewController.m */; };
 		513C5E1F1877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */; };
 		513C5E201877892E00AAFB35 /* UXRGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E191877892E00AAFB35 /* UXRGlobals.m */; };
-		513C5E211877892E00AAFB35 /* UXRBaseCollectionReuseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1B1877892E00AAFB35 /* UXRBaseCollectionReuseableView.m */; };
 		513C5E221877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */; };
 		513C5E2518778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXROfferCollectionViewCell.xib */; };
 		513C5E2618778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513C5E2418778ADF00AAFB35 /* UXROfferCollectionViewCell.xib */; };
@@ -175,6 +174,8 @@
 		51ACA4BD1878C0A8003E41BA /* tide-pods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */; };
 		51ACA4BF1878C502003E41BA /* tidePods.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BE1878C502003E41BA /* tidePods.png */; };
 		51ACA4C01878C502003E41BA /* tidePods.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BE1878C502003E41BA /* tidePods.png */; };
+		51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E86618187B356500AEAEBA /* UXRSmartCollectionReuseableView.m */; };
+		51E8661B187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */; };
 		51F79941187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79942187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79944187A66220011C224 /* amazon-prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79943187A66220011C224 /* amazon-prime.jpg */; };
@@ -283,8 +284,6 @@
 		513C5E171877892E00AAFB35 /* UXRBaseHorizontalCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseHorizontalCollectionViewContoller.m; sourceTree = "<group>"; };
 		513C5E181877892E00AAFB35 /* UXRGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRGlobals.h; sourceTree = "<group>"; };
 		513C5E191877892E00AAFB35 /* UXRGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRGlobals.m; sourceTree = "<group>"; };
-		513C5E1A1877892E00AAFB35 /* UXRBaseCollectionReuseableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRBaseCollectionReuseableView.h; sourceTree = "<group>"; };
-		513C5E1B1877892E00AAFB35 /* UXRBaseCollectionReuseableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRBaseCollectionReuseableView.m; sourceTree = "<group>"; };
 		513C5E1C1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRHomeHorizontalCollectionViewController.h; sourceTree = "<group>"; };
 		513C5E1D1877892E00AAFB35 /* UXRHomeHorizontalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRHomeHorizontalCollectionViewController.m; sourceTree = "<group>"; };
 		513C5E2318778A7700AAFB35 /* MapKitUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitUtilities.h; sourceTree = "<group>"; };
@@ -357,6 +356,9 @@
 		51ACA4B81878BEE2003E41BA /* equalizer_white_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = equalizer_white_2.gif; sourceTree = "<group>"; };
 		51ACA4BB1878C0A8003E41BA /* tide-pods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tide-pods.jpg"; sourceTree = "<group>"; };
 		51ACA4BE1878C502003E41BA /* tidePods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tidePods.png; sourceTree = "<group>"; };
+		51E86617187B356500AEAEBA /* UXRSmartCollectionReuseableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRSmartCollectionReuseableView.h; sourceTree = "<group>"; };
+		51E86618187B356500AEAEBA /* UXRSmartCollectionReuseableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRSmartCollectionReuseableView.m; sourceTree = "<group>"; };
+		51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRHeaderCollectionReuseableView.xib; sourceTree = "<group>"; };
 		51F79940187A66070011C224 /* netflix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = netflix.jpg; sourceTree = "<group>"; };
 		51F79943187A66220011C224 /* amazon-prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amazon-prime.jpg"; sourceTree = "<group>"; };
 		51F79946187A67F90011C224 /* starbucks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starbucks.gif; sourceTree = "<group>"; };
@@ -463,10 +465,11 @@
 		513C5D70187785D100AAFB35 /* Collection View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				513C5E1A1877892E00AAFB35 /* UXRBaseCollectionReuseableView.h */,
-				513C5E1B1877892E00AAFB35 /* UXRBaseCollectionReuseableView.m */,
+				51E86617187B356500AEAEBA /* UXRSmartCollectionReuseableView.h */,
+				51E86618187B356500AEAEBA /* UXRSmartCollectionReuseableView.m */,
 				5181448C187A314700221C3E /* UXRHeaderCollectionReuseableView.h */,
 				5181448D187A314700221C3E /* UXRHeaderCollectionReuseableView.m */,
+				51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */,
 				513C5E03187786D600AAFB35 /* UXRSmartCollectionViewCell.h */,
 				513C5E04187786D600AAFB35 /* UXRSmartCollectionViewCell.m */,
 				513C5E0D187787B900AAFB35 /* UXROfferCollectionViewCell.h */,
@@ -886,6 +889,7 @@
 				51ACA4B61878BE9D003E41BA /* equalizer_white.gif in Resources */,
 				51ACA4A41878B1E4003E41BA /* radial_gradient.jpg in Resources */,
 				51814496187A32CD00221C3E /* nordstrom.jpg in Resources */,
+				51E8661B187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib in Resources */,
 				51ACA4BF1878C502003E41BA /* tidePods.png in Resources */,
 				518144B2187A501700221C3E /* dancingwiththestars.jpg in Resources */,
 				513C5E2518778ADF00AAFB35 /* UXROfferCollectionViewCell.xib in Resources */,
@@ -1040,6 +1044,7 @@
 				513C5DE81877866E00AAFB35 /* UIImage+StackBlur.m in Sources */,
 				513C5DEE1877866E00AAFB35 /* NSString+MetersToMiles.m in Sources */,
 				51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
+				51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */,
 				517B42AB1873489400A07A0A /* main.m in Sources */,
 				513C5E01187786C300AAFB35 /* UXRSmartTableViewCell.m in Sources */,
 				513C5DE41877866E00AAFB35 /* UIImage+Compositing.m in Sources */,
@@ -1049,7 +1054,6 @@
 				513C5DB81877866E00AAFB35 /* UIStoryboard+storyboardWithUniversalName.m in Sources */,
 				513C5E4318778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */,
 				513C5DD01877866E00AAFB35 /* UIImage+blur.m in Sources */,
-				513C5E211877892E00AAFB35 /* UXRBaseCollectionReuseableView.m in Sources */,
 				513C5DE61877866E00AAFB35 /* UIImageView+AsyncLoading.m in Sources */,
 				513C5E201877892E00AAFB35 /* UXRGlobals.m in Sources */,
 				513C5DC61877866E00AAFB35 /* NSString+Utils.m in Sources */,

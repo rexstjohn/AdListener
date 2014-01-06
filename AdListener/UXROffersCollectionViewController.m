@@ -7,7 +7,6 @@
 
 #import "UXROffersCollectionViewController.h" 
 #import "UXROfferCollectionViewCell.h"
-#import "UXRBaseCollectionReuseableView.h"
 
 @interface UXROffersCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenTitles;

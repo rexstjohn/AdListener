@@ -191,7 +191,7 @@
                                     <constraint firstItem="IYP-PP-6Di" firstAttribute="leading" secondItem="krU-8h-cAv" secondAttribute="trailing" constant="15" id="tiR-IN-B3V"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -471,9 +471,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zxL-0G-yIC"/>
         <segue reference="l5k-CK-8eZ"/>
-        <segue reference="uoZ-gU-4ah"/>
+        <segue reference="zxL-0G-yIC"/>
+        <segue reference="cWs-AB-tka"/>
         <segue reference="Dwj-Wp-2A3"/>
     </inferredMetricsTieBreakers>
 </document>

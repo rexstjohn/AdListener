@@ -6,11 +6,13 @@
 //  Copyright (c) 2014 UX-RX. All rights reserved.
 //
 
-#import "UXRBaseCollectionReuseableView.h"
-#import "UXRUserInfoHeaderView.h"
+#import "UXRSmartCollectionReuseableView.h"
+#import "UXRButton.h"
 
-@interface UXRHeaderCollectionReuseableView : UXRBaseCollectionReuseableView
-@property(nonatomic,strong) UXRUserInfoHeaderView *userInfoView;
+@interface UXRHeaderCollectionReuseableView : UXRSmartCollectionReuseableView
 
+@property(nonatomic,weak) IBOutlet UXRButton *redeemButton;
+@property(nonatomic,weak) IBOutlet UXRButton *rewatchButton;
 +(CGSize)sizeForHeaderView;
+
 @end

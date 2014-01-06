@@ -10,17 +10,33 @@
 
 @implementation UXRHeaderCollectionReuseableView
 
+
++ (NSString *)cellIdentifier {
+    static NSString* _cellIdentifier = @"UXRHeaderCollectionReuseableView";
+    _cellIdentifier = NSStringFromClass([self class]);
+    return _cellIdentifier;
+}
+
 -(void)awakeFromNib{
     [super awakeFromNib];
-    self.userInfoView = [[UXRUserInfoHeaderView alloc] initWithFrame:self.frame];
-    [self addSubview:self.userInfoView];
-    self.userInfoView.center = self.center;
-    self.userInteractionEnabled = YES;
-    self.userInfoView.userInteractionEnabled = YES;
+    //
 }
 
 +(CGSize)sizeForHeaderView{
     return CGSizeMake(529.0f, 1024.0f);
 }
+
+-(IBAction)didTapListen:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LISTEN_NOTIFICATION" object:nil];
+}
+
+-(IBAction)didTapRewatch:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"REWATCH_NOTIFICATION" object:nil];
+}
+
+-(IBAction)didTapRedeem:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"REDEEM_NOTIFICATION" object:nil];
+}
+
 
 @end
