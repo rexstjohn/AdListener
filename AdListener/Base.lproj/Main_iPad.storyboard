@@ -88,14 +88,14 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapSkip:" destination="vb8-NH-34e" eventType="touchUpInside" id="oSn-aH-HM0"/>
-                                    <segue destination="cRT-8M-KGb" kind="push" id="KtJ-WM-rPm"/>
+                                    <segue destination="cRT-8M-KGb" kind="push" identifier="PushAdCollectionViewSegue" id="KtJ-WM-rPm"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jG5-fg-wK2">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jG5-fg-wK2">
                                 <rect key="frame" x="106" y="867" width="557" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecq-cb-rxL" customClass="UXRButton">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecq-cb-rxL" customClass="UXRButton">
                                         <rect key="frame" x="373" y="12" width="161" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,7 +107,7 @@
                                             <action selector="replayButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="i8C-em-aIv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52b-lb-f8w" customClass="UXRButton">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52b-lb-f8w" customClass="UXRButton">
                                         <rect key="frame" x="22" y="12" width="161" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,15 +131,39 @@
                                             <action selector="rightButtonAction:" destination="Z8Q-Nw-6vU" eventType="touchUpInside" id="gfm-HU-aNY"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Award: 500 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-ss-U1Q">
-                                        <rect key="frame" x="210" y="82" width="136" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Award: 500 Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-ss-U1Q">
+                                        <rect key="frame" x="22" y="81" width="136" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rate This Ad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krU-8h-cAv">
+                                        <rect key="frame" x="256" y="81" width="103" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view alpha="0.74999999999999978" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-PP-6Di">
+                                        <rect key="frame" x="373" y="76" width="161" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="phJ-vo-nhg"/>
+                                            <constraint firstAttribute="width" constant="176" id="sbH-mp-gLa"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IYP-PP-6Di" secondAttribute="bottom" constant="8" id="OGv-Bh-Jd8"/>
+                                    <constraint firstItem="IYP-PP-6Di" firstAttribute="top" secondItem="Ecq-cb-rxL" secondAttribute="bottom" constant="13" id="RNN-qO-R3b"/>
+                                    <constraint firstItem="Xqn-ss-U1Q" firstAttribute="top" secondItem="52b-lb-f8w" secondAttribute="bottom" constant="18" id="WzH-SK-JWx"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYP-PP-6Di" secondAttribute="trailing" constant="23" id="keK-Sl-fGO"/>
+                                    <constraint firstItem="Xqn-ss-U1Q" firstAttribute="leading" secondItem="jG5-fg-wK2" secondAttribute="leading" constant="22" id="oxy-Te-6TO"/>
+                                    <constraint firstItem="IYP-PP-6Di" firstAttribute="leading" secondItem="krU-8h-cAv" secondAttribute="trailing" constant="15" id="tiR-IN-B3V"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-Eu-sdm">
                                 <rect key="frame" x="134" y="34" width="500" height="64"/>
@@ -191,12 +215,13 @@
                     <connections>
                         <outlet property="questionLabel" destination="0UU-qw-oJA" id="x5u-u5-1dT"/>
                         <outlet property="questionView" destination="jG5-fg-wK2" id="zya-X1-8mP"/>
+                        <outlet property="starView" destination="IYP-PP-6Di" id="3D5-c8-NCQ"/>
                         <outlet property="tidePodsImageView" destination="y9L-Wj-5kT" id="0NA-4E-M3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVw-fX-xXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="-561"/>
+            <point key="canvasLocation" x="443" y="-705"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7lI-bo-r1e">
@@ -294,10 +319,14 @@
                                     <action selector="didTapListen:" destination="vb8-NH-34e" eventType="touchUpInside" id="LVC-0z-uPu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-df-pay" customClass="UXRButton">
                                 <rect key="frame" x="271" y="784" width="227" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="6Bx-9h-0eO"/>
+                                    <constraint firstAttribute="height" constant="51" id="6of-It-VE1"/>
+                                </constraints>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -316,7 +345,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapSkip:" destination="vb8-NH-34e" eventType="touchUpInside" id="cAk-n3-SgF"/>
-                                    <segue destination="cRT-8M-KGb" kind="push" id="zxL-0G-yIC"/>
+                                    <segue destination="cRT-8M-KGb" kind="push" identifier="PushAdCollectionViewSegue" id="zxL-0G-yIC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listening...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-gP-NWo" customClass="UXRLabel">

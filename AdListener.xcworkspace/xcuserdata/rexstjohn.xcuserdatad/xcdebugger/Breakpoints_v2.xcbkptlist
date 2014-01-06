@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdListener/UXRHomeViewController.m"
-            timestampString = "410662685.647129"
+            timestampString = "410666400.145152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-didDetectAdvertisement"
             landmarkType = "5">
          </BreakpointContent>

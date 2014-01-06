@@ -12,6 +12,7 @@
 
 @interface UXRAdDisplayViewController : UIViewController <CMPopTipViewDelegate, UIAlertViewDelegate>
 @property(nonatomic,weak) IBOutlet UIImageView* tidePodsImageView;
+@property(nonatomic,weak) IBOutlet UIView* starView;;
 @property(nonatomic,weak) IBOutlet UIView* questionView;
 @property(nonatomic,weak) IBOutlet UXRLabel *questionLabel;
 -(IBAction)replayButtonAction:(id)sender;

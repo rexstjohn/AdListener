@@ -9,6 +9,7 @@
 #import "UXRHomeViewController.h"
 #import "UIView+SimpleSizing.h"
 #import "UIImage+animatedGIF.h"
+#import "StarRatingView.h"
 
 @interface UXRHomeViewController ()
 @property(nonatomic,strong) CMPopTipView *popTipView;
@@ -40,6 +41,7 @@
     self.popTipView.backgroundColor = [UIColor lightGrayColor];
     self.popTipView.delegate = self;
     [self.popTipView presentPointingAtView:self.profileView inView:self.view animated:YES];
+    
 }
 
 #pragma mark - Pop up tip delegate
