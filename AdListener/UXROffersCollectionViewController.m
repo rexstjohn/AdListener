@@ -7,10 +7,12 @@
 
 #import "UXROffersCollectionViewController.h" 
 #import "UXROfferCollectionViewCell.h"
+#import "UXRRedeemCollectionReusableView.h"
 
 @interface UXROffersCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenTitles;
 @property(nonatomic,strong) NSArray *homeScreenImages;
+@property(nonatomic,strong) UXRRedeemCollectionReusableView *headerView;
 @end
 
 @implementation UXROffersCollectionViewController
@@ -32,15 +34,16 @@
     cell.backgroundImageView.image = [UIImage imageNamed:self.homeScreenImages[indexPath.row]];
     return cell;
 }
-/*
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionReusableView *reusableview = nil;
     
     if (kind == UICollectionElementKindSectionHeader) {
-//        UXRBaseCollectionReuseableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UXRHomeCollectionHeaderReusableView" forIndexPath:indexPath];
-//        reusableview = headerView;
+        self.headerView = [UXRRedeemCollectionReusableView collectionReusableViewForCollectionView:collectionView forIndexPath:indexPath withKind:kind];
+        reusableview = self.headerView;
+        [self.headerView.closeButton addTarget:self action:@selector(didTapClose:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     if (kind == UICollectionElementKindSectionFooter) {
@@ -51,7 +54,13 @@
     
     return reusableview;
 }
-*/
+
+#pragma mark - Action
+
+-(IBAction)didTapClose:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 #pragma mark - UICollectionView Datasource
 

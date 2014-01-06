@@ -10,6 +10,7 @@
 #import "UXRUserInfoHeaderView.h"
 #import "UXRHeaderCollectionReuseableView.h"
 #import "UXRAdDisplayViewController.h"
+#import "UXRGlobals.h"
 
 @interface UXRHomeHorizontalCollectionViewController ()
 @property(nonatomic,strong) NSArray *homeScreenImages;
@@ -26,14 +27,19 @@
     self.homeScreenTitles = @[@"Nordstrom",@"Twix",  @"Phillips", @"Wheaties", @"Norelco", @"Tiffany", @"Tidepods"];
     
     //
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRewatch:) name:@"REWATCH_NOTIFICAITON" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapListen:) name:@"LISTEN_NOTIFICAITON" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRedeem:) name:@"REDEEM_NOTIFICAITON" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRewatch:) name:REWATCH_REQUEST_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapListen:) name:LISTEN_REQUEST_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRedeem:) name:REDEEM_REQUEST_NOTIFICATION object:nil];
 }
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Flow Layout
@@ -103,17 +109,17 @@
 
 #pragma mark - Actions
 
--(void)didTapRewatch:(id)sender{
+-(void)didTapRewatch:(NSNotification*)sender{
     [self performSegueWithIdentifier:@"PushAdViewSegue" sender:self];
 }
 
--(void)didTapListen:(id)sender{
+-(void)didTapListen:(NSNotification*)sender{
     [self performSegueWithIdentifier:@"PushListenSegue" sender:self];
 }
 
 
--(void)didTapRedeem:(id)sender{
-    [self performSegueWithIdentifier:@"PushRedeemSegue" sender:self];
+-(void)didTapRedeem:(NSNotification*)sender{
+    [self performSegueWithIdentifier:@"RedeemPointsSegue" sender:self];
 }
 
 #pragma mark - Gesutres

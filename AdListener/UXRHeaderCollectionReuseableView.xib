@@ -36,7 +36,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="didTapRedeem:" destination="ivo-WX-5fC" eventType="touchUpInside" id="ocH-Dp-Qi0"/>
+                                <action selector="didTapRedeem:" destination="ivo-WX-5fC" eventType="touchUpInside" id="In1-xM-IY6"/>
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gug-h9-eBQ">
@@ -68,7 +68,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="didTapRewatch:" destination="ivo-WX-5fC" eventType="touchUpInside" id="fGd-ZX-WeN"/>
+                                <action selector="didTapRewatch:" destination="ivo-WX-5fC" eventType="touchUpInside" id="ed5-zO-kRz"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-Ed-qQ1" customClass="UXRButton">
@@ -85,7 +85,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="didTapListen:" destination="ivo-WX-5fC" eventType="touchUpInside" id="mHb-G4-UNZ"/>
+                                <action selector="didTapListen:" destination="ivo-WX-5fC" eventType="touchUpInside" id="oug-AQ-vDx"/>
                             </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Ad You Watched: Tide Pods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-86-dDr">

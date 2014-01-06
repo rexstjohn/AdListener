@@ -10,4 +10,8 @@
 @interface UXRGlobals : NSObject
 extern NSString* TESTFLIGHT_TOKEN;
 
+// notifications
+extern NSString* LISTEN_REQUEST_NOTIFICATION;
+extern NSString* REDEEM_REQUEST_NOTIFICATION;
+extern NSString* REWATCH_REQUEST_NOTIFICATION;
 @end

@@ -176,6 +176,8 @@
 		51ACA4C01878C502003E41BA /* tidePods.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ACA4BE1878C502003E41BA /* tidePods.png */; };
 		51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E86618187B356500AEAEBA /* UXRSmartCollectionReuseableView.m */; };
 		51E8661B187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */; };
+		51E8661E187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E8661D187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m */; };
+		51E86620187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E8661F187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib */; };
 		51F79941187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79942187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79944187A66220011C224 /* amazon-prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79943187A66220011C224 /* amazon-prime.jpg */; };
@@ -359,6 +361,9 @@
 		51E86617187B356500AEAEBA /* UXRSmartCollectionReuseableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRSmartCollectionReuseableView.h; sourceTree = "<group>"; };
 		51E86618187B356500AEAEBA /* UXRSmartCollectionReuseableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRSmartCollectionReuseableView.m; sourceTree = "<group>"; };
 		51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRHeaderCollectionReuseableView.xib; sourceTree = "<group>"; };
+		51E8661C187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRedeemCollectionReusableView.h; sourceTree = "<group>"; };
+		51E8661D187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRedeemCollectionReusableView.m; sourceTree = "<group>"; };
+		51E8661F187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRRedeemCollectionReusableView.xib; sourceTree = "<group>"; };
 		51F79940187A66070011C224 /* netflix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = netflix.jpg; sourceTree = "<group>"; };
 		51F79943187A66220011C224 /* amazon-prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amazon-prime.jpg"; sourceTree = "<group>"; };
 		51F79946187A67F90011C224 /* starbucks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starbucks.gif; sourceTree = "<group>"; };
@@ -478,6 +483,9 @@
 				513C5E2718778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.h */,
 				513C5E2818778C2600AAFB35 /* UXRNowPlayingCollectionViewCell.m */,
 				513C5E2B18778C4200AAFB35 /* UXRNowPlayingCollectionViewCell.xib */,
+				51E8661C187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.h */,
+				51E8661D187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m */,
+				51E8661F187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib */,
 			);
 			name = "Collection View Cells";
 			sourceTree = "<group>";
@@ -898,6 +906,7 @@
 				517B42B21873489400A07A0A /* Main_iPhone.storyboard in Resources */,
 				518144AC187A448F00221C3E /* 5starsgray.png in Resources */,
 				51ACA4901878A9F3003E41BA /* no_image.jpg in Resources */,
+				51E86620187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib in Resources */,
 				513C5E3F18778F5B00AAFB35 /* twix_commercial.mp4 in Resources */,
 				517B42A91873489400A07A0A /* InfoPlist.strings in Resources */,
 			);
@@ -1046,6 +1055,7 @@
 				51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */,
 				517B42AB1873489400A07A0A /* main.m in Sources */,
+				51E8661E187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m in Sources */,
 				513C5E01187786C300AAFB35 /* UXRSmartTableViewCell.m in Sources */,
 				513C5DE41877866E00AAFB35 /* UIImage+Compositing.m in Sources */,
 				513C5DEC1877866E00AAFB35 /* UIImageView+CrossFade.m in Sources */,

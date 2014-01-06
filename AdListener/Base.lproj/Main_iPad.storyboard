@@ -49,6 +49,7 @@
                     <connections>
                         <segue destination="Z8Q-Nw-6vU" kind="push" identifier="PushAdViewSegue" id="cWs-AB-tka"/>
                         <segue destination="vb8-NH-34e" kind="push" identifier="PushListenSegue" id="l5k-CK-8eZ"/>
+                        <segue destination="6nQ-Yt-MFP" kind="modal" identifier="RedeemPointsSegue" id="Scj-TQ-Njd"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meP-dH-4ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,11 +66,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jdq-DE-tUK">
                             <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UXRRedeemCollectionReusableView" id="UVK-NG-TAG" customClass="UXRRedeemCollectionReusableView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="6nQ-Yt-MFP" id="cpS-Lr-J4Y"/>
                             <outlet property="delegate" destination="6nQ-Yt-MFP" id="00b-UC-aVc"/>
@@ -217,7 +222,7 @@
                                         </state>
                                         <connections>
                                             <action selector="didTapRedeemPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="zRY-7y-bFI"/>
-                                            <segue destination="6nQ-Yt-MFP" kind="push" identifier="PushOffersViewSegue" id="v19-XO-4Y7"/>
+                                            <segue destination="6nQ-Yt-MFP" kind="modal" identifier="PushOffersViewSegue" id="v19-XO-4Y7"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-l5-Vk3">
@@ -288,7 +293,7 @@
                                         </state>
                                         <connections>
                                             <action selector="didTapRedeemPoints:" destination="vb8-NH-34e" eventType="touchUpInside" id="DdA-Xf-auC"/>
-                                            <segue destination="6nQ-Yt-MFP" kind="push" id="Dwj-Wp-2A3"/>
+                                            <segue destination="6nQ-Yt-MFP" kind="modal" id="Dwj-Wp-2A3"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-gH-6zs">
@@ -439,25 +444,6 @@
             </objects>
             <point key="canvasLocation" x="-429" y="-133"/>
         </scene>
-        <!--Movie Player View Controller-->
-        <scene sceneID="54b-dl-uZf">
-            <objects>
-                <viewController storyboardIdentifier="UXRMoviePlayerViewController" automaticallyAdjustsScrollViewInsets="NO" id="cg2-dy-ddN" customClass="UXRMoviePlayerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jJU-tz-KTa"/>
-                        <viewControllerLayoutGuide type="bottom" id="TI5-rZ-80a"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mqe-yU-424">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OGa-MR-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3009" y="-472"/>
-        </scene>
     </scenes>
     <resources>
         <image name="microphone.jpg" width="1280" height="1024"/>
@@ -471,9 +457,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="l5k-CK-8eZ"/>
+        <segue reference="Scj-TQ-Njd"/>
         <segue reference="zxL-0G-yIC"/>
+        <segue reference="l5k-CK-8eZ"/>
         <segue reference="cWs-AB-tka"/>
-        <segue reference="Dwj-Wp-2A3"/>
     </inferredMetricsTieBreakers>
 </document>

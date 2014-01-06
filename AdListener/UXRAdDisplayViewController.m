@@ -80,15 +80,11 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    if([self.adType isEqualToString:@"tide"]){
-        self.navigationController.navigationBarHidden = YES;
-    } else {
-        self.navigationController.navigationBarHidden = NO;
-    }
-    
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
+ 
 
 #pragma mark - Pop up tip delegate
 
@@ -147,7 +143,7 @@
         
     } else if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Ok"] == YES){
         [self performSegueWithIdentifier:@"PushAdCollectionViewSegue" sender:self];
-    } else {
+    } else if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Spend Points Now"] == YES){
         [self performSegueWithIdentifier:@"PushOffersViewSegue" sender:self];
     }
 }
