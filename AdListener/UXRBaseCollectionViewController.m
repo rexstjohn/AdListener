@@ -27,6 +27,8 @@
     flowLayout.minimumLineSpacing = 5.0f;
     flowLayout.minimumInteritemSpacing = 5.0f;
     self.collectionView.collectionViewLayout = flowLayout;
+    
+    //
 }
 
 #pragma mark - UICollectionView Datasource
