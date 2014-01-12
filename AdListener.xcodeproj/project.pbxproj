@@ -43,8 +43,6 @@
 		513C5DD51877866E00AAFB35 /* UIImage+Cropping.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D991877866E00AAFB35 /* UIImage+Cropping.m */; };
 		513C5DD61877866E00AAFB35 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9B1877866E00AAFB35 /* UIImage+Resize.m */; };
 		513C5DD71877866E00AAFB35 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9B1877866E00AAFB35 /* UIImage+Resize.m */; };
-		513C5DD81877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9D1877866E00AAFB35 /* UIImage+RotateByAngle.m */; };
-		513C5DD91877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9D1877866E00AAFB35 /* UIImage+RotateByAngle.m */; };
 		513C5DDA1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9F1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m */; };
 		513C5DDB1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5D9F1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m */; };
 		513C5DDC1877866E00AAFB35 /* UIView+AddBorderWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DA11877866E00AAFB35 /* UIView+AddBorderWithColor.m */; };
@@ -59,8 +57,6 @@
 		513C5DE51877866E00AAFB35 /* UIImage+Compositing.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DA91877866E00AAFB35 /* UIImage+Compositing.m */; };
 		513C5DE61877866E00AAFB35 /* UIImageView+AsyncLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAB1877866E00AAFB35 /* UIImageView+AsyncLoading.m */; };
 		513C5DE71877866E00AAFB35 /* UIImageView+AsyncLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAB1877866E00AAFB35 /* UIImageView+AsyncLoading.m */; };
-		513C5DE81877866E00AAFB35 /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAD1877866E00AAFB35 /* UIImage+StackBlur.m */; };
-		513C5DE91877866E00AAFB35 /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAD1877866E00AAFB35 /* UIImage+StackBlur.m */; };
 		513C5DEA1877866E00AAFB35 /* UIImage+Colorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAF1877866E00AAFB35 /* UIImage+Colorize.m */; };
 		513C5DEB1877866E00AAFB35 /* UIImage+Colorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DAF1877866E00AAFB35 /* UIImage+Colorize.m */; };
 		513C5DEC1877866E00AAFB35 /* UIImageView+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 513C5DB11877866E00AAFB35 /* UIImageView+CrossFade.m */; };
@@ -236,8 +232,6 @@
 		513C5D991877866E00AAFB35 /* UIImage+Cropping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cropping.m"; sourceTree = "<group>"; };
 		513C5D9A1877866E00AAFB35 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		513C5D9B1877866E00AAFB35 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		513C5D9C1877866E00AAFB35 /* UIImage+RotateByAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RotateByAngle.h"; sourceTree = "<group>"; };
-		513C5D9D1877866E00AAFB35 /* UIImage+RotateByAngle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RotateByAngle.m"; sourceTree = "<group>"; };
 		513C5D9E1877866E00AAFB35 /* UIStoryboard+CreateFromClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+CreateFromClass.h"; sourceTree = "<group>"; };
 		513C5D9F1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+CreateFromClass.m"; sourceTree = "<group>"; };
 		513C5DA01877866E00AAFB35 /* UIView+AddBorderWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddBorderWithColor.h"; sourceTree = "<group>"; };
@@ -252,8 +246,6 @@
 		513C5DA91877866E00AAFB35 /* UIImage+Compositing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compositing.m"; sourceTree = "<group>"; };
 		513C5DAA1877866E00AAFB35 /* UIImageView+AsyncLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AsyncLoading.h"; sourceTree = "<group>"; };
 		513C5DAB1877866E00AAFB35 /* UIImageView+AsyncLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AsyncLoading.m"; sourceTree = "<group>"; };
-		513C5DAC1877866E00AAFB35 /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
-		513C5DAD1877866E00AAFB35 /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
 		513C5DAE1877866E00AAFB35 /* UIImage+Colorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colorize.h"; sourceTree = "<group>"; };
 		513C5DAF1877866E00AAFB35 /* UIImage+Colorize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colorize.m"; sourceTree = "<group>"; };
 		513C5DB01877866E00AAFB35 /* UIImageView+CrossFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CrossFade.h"; sourceTree = "<group>"; };
@@ -552,8 +544,6 @@
 				513C5D991877866E00AAFB35 /* UIImage+Cropping.m */,
 				513C5D9A1877866E00AAFB35 /* UIImage+Resize.h */,
 				513C5D9B1877866E00AAFB35 /* UIImage+Resize.m */,
-				513C5D9C1877866E00AAFB35 /* UIImage+RotateByAngle.h */,
-				513C5D9D1877866E00AAFB35 /* UIImage+RotateByAngle.m */,
 				513C5D9E1877866E00AAFB35 /* UIStoryboard+CreateFromClass.h */,
 				513C5D9F1877866E00AAFB35 /* UIStoryboard+CreateFromClass.m */,
 				513C5DA01877866E00AAFB35 /* UIView+AddBorderWithColor.h */,
@@ -568,8 +558,6 @@
 				513C5DA91877866E00AAFB35 /* UIImage+Compositing.m */,
 				513C5DAA1877866E00AAFB35 /* UIImageView+AsyncLoading.h */,
 				513C5DAB1877866E00AAFB35 /* UIImageView+AsyncLoading.m */,
-				513C5DAC1877866E00AAFB35 /* UIImage+StackBlur.h */,
-				513C5DAD1877866E00AAFB35 /* UIImage+StackBlur.m */,
 				513C5DAE1877866E00AAFB35 /* UIImage+Colorize.h */,
 				513C5DAF1877866E00AAFB35 /* UIImage+Colorize.m */,
 				513C5DB01877866E00AAFB35 /* UIImageView+CrossFade.h */,
@@ -1050,7 +1038,6 @@
 				513C5D771877861700AAFB35 /* UXROffersCollectionViewController.m in Sources */,
 				513C5E3018778C9700AAFB35 /* UXRImageView.m in Sources */,
 				513C5DD21877866E00AAFB35 /* UIImage+Color.m in Sources */,
-				513C5DE81877866E00AAFB35 /* UIImage+StackBlur.m in Sources */,
 				513C5DEE1877866E00AAFB35 /* NSString+MetersToMiles.m in Sources */,
 				51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */,
@@ -1060,7 +1047,6 @@
 				513C5DE41877866E00AAFB35 /* UIImage+Compositing.m in Sources */,
 				513C5DEC1877866E00AAFB35 /* UIImageView+CrossFade.m in Sources */,
 				513C5DB61877866E00AAFB35 /* UIViewController+SlideTransitions.m in Sources */,
-				513C5DD81877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */,
 				513C5DB81877866E00AAFB35 /* UIStoryboard+storyboardWithUniversalName.m in Sources */,
 				513C5E4318778FEC00AAFB35 /* UXRMoviePlayerViewController.m in Sources */,
 				513C5DD01877866E00AAFB35 /* UIImage+blur.m in Sources */,
@@ -1087,7 +1073,6 @@
 			files = (
 				513C5E06187786D600AAFB35 /* UXRSmartCollectionViewCell.m in Sources */,
 				513C5E02187786C300AAFB35 /* UXRSmartTableViewCell.m in Sources */,
-				513C5DD91877866E00AAFB35 /* UIImage+RotateByAngle.m in Sources */,
 				51ACA4A91878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				513C5DCD1877866E00AAFB35 /* UIColor+SimpleColoring.m in Sources */,
 				518144AA187A446000221C3E /* StarRatingView.m in Sources */,
@@ -1118,7 +1103,6 @@
 				513C5E0B187786FD00AAFB35 /* UXRJSONDeserializableObject.m in Sources */,
 				513C5DCB1877866E00AAFB35 /* UIButton+Theming.m in Sources */,
 				5181448F187A314700221C3E /* UXRHeaderCollectionReuseableView.m in Sources */,
-				513C5DE91877866E00AAFB35 /* UIImage+StackBlur.m in Sources */,
 				513C5DC51877866E00AAFB35 /* NSString+Location.m in Sources */,
 				513C5DC31877866E00AAFB35 /* NSDictionary+PList.m in Sources */,
 				513C5DE31877866E00AAFB35 /* UIView+SimpleSizing.m in Sources */,
