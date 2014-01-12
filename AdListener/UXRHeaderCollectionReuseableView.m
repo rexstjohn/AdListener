@@ -38,5 +38,9 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:REDEEM_REQUEST_NOTIFICATION object:nil];
 }
 
+-(IBAction)didTapUserProfile:(id)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:USER_PROFILE_REQUEST_NOTIFICATION object:nil];
+}
+
 
 @end

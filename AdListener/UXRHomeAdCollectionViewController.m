@@ -32,6 +32,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRewatch:) name:REWATCH_REQUEST_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapListen:) name:LISTEN_REQUEST_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapRedeem:) name:REDEEM_REQUEST_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didTapOpenUserProfile:) name:USER_PROFILE_REQUEST_NOTIFICATION object:nil];
 }
 
 
@@ -118,6 +119,10 @@
 
 -(void)didTapRedeem:(NSNotification*)sender{
     [self performSegueWithIdentifier:REDEEM_SEGUE sender:self];
+}
+
+-(void)didTapOpenUserProfile:(NSNotification*)sender{
+    [self performSegueWithIdentifier:USER_PROFILE_SEGUE sender:self];
 }
 
 #pragma mark - Gesutres

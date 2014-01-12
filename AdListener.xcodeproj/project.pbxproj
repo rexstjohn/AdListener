@@ -174,6 +174,7 @@
 		51E8661B187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E8661A187B357B00AEAEBA /* UXRHeaderCollectionReuseableView.xib */; };
 		51E8661E187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E8661D187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m */; };
 		51E86620187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E8661F187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib */; };
+		51F639D618834BCD00F10273 /* UXRUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F639D518834BCD00F10273 /* UXRUserProfileViewController.m */; };
 		51F79941187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79942187A66070011C224 /* netflix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79940187A66070011C224 /* netflix.jpg */; };
 		51F79944187A66220011C224 /* amazon-prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51F79943187A66220011C224 /* amazon-prime.jpg */; };
@@ -356,6 +357,8 @@
 		51E8661C187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRRedeemCollectionReusableView.h; sourceTree = "<group>"; };
 		51E8661D187B41CB00AEAEBA /* UXRRedeemCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRRedeemCollectionReusableView.m; sourceTree = "<group>"; };
 		51E8661F187B41DC00AEAEBA /* UXRRedeemCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXRRedeemCollectionReusableView.xib; sourceTree = "<group>"; };
+		51F639D418834BCD00F10273 /* UXRUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXRUserProfileViewController.h; sourceTree = "<group>"; };
+		51F639D518834BCD00F10273 /* UXRUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXRUserProfileViewController.m; sourceTree = "<group>"; };
 		51F79940187A66070011C224 /* netflix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = netflix.jpg; sourceTree = "<group>"; };
 		51F79943187A66220011C224 /* amazon-prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amazon-prime.jpg"; sourceTree = "<group>"; };
 		51F79946187A67F90011C224 /* starbucks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starbucks.gif; sourceTree = "<group>"; };
@@ -455,6 +458,8 @@
 				51ACA48C1878A941003E41BA /* UXRListenViewController.m */,
 				51ACA4A61878BA20003E41BA /* UXRAdDisplayViewController.h */,
 				51ACA4A71878BA20003E41BA /* UXRAdDisplayViewController.m */,
+				51F639D418834BCD00F10273 /* UXRUserProfileViewController.h */,
+				51F639D518834BCD00F10273 /* UXRUserProfileViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1038,6 +1043,7 @@
 				513C5D771877861700AAFB35 /* UXROffersCollectionViewController.m in Sources */,
 				513C5E3018778C9700AAFB35 /* UXRImageView.m in Sources */,
 				513C5DD21877866E00AAFB35 /* UIImage+Color.m in Sources */,
+				51F639D618834BCD00F10273 /* UXRUserProfileViewController.m in Sources */,
 				513C5DEE1877866E00AAFB35 /* NSString+MetersToMiles.m in Sources */,
 				51ACA4A81878BA20003E41BA /* UXRAdDisplayViewController.m in Sources */,
 				51E86619187B356500AEAEBA /* UXRSmartCollectionReuseableView.m in Sources */,
