@@ -1,9 +1,9 @@
 //
 //  CLLocation+isEmpty.m
-//  urbanspin
+//  UX-RX
 //
 //  Created by JASON CROSS on 3/21/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
 #import "CLLocation+isEmpty.h"

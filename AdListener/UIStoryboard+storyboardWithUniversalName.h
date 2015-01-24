@@ -1,9 +1,9 @@
 //
 //  UIStoryboard+storyboardWithUniversalName.h
-//  urbanspin
+//  UX-RX
 //
 //  Created by JASON CROSS on 3/8/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

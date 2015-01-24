@@ -1,9 +1,9 @@
 //
 //  UIImage+Color.m
-//  urbanspin
+//  UX-RX
 //
 //  Created by Rex St John on 2/27/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
 #import "UIImage+Color.h"

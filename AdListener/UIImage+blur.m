@@ -1,9 +1,9 @@
 //
 //  UIImage+blur.m
-//  urbanspin
+//  UX-RX
 //
 //  Created by JASON CROSS on 7/11/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
 #import "UIImage+blur.h"

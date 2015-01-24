@@ -1,9 +1,9 @@
 //
 //  NSString+Utils.h
-//  urbanspin
+//  UX-RX
 //
 //  Created by Rex St John on 1/10/13.
-//  Copyright (c) 2013 Urbanspoon. All rights reserved.
+//  Copyright (c) 2013 UX-RX. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
